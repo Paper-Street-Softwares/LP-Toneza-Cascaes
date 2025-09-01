@@ -20,7 +20,7 @@ export default function AboutModal() {
         </p>
 
         <Trans i18nKey="about.modal" components={{ br: <br /> }} />
-
+        <p className="my-[20px]">{t("about.ctaText")}</p>
         <div className="mt-4">
           <Button
             aria-label={t("about.ctaButtonAriaLabel")}

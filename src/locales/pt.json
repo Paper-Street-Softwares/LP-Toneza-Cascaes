@@ -26,50 +26,50 @@
     }
   },
   "features": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "OBRAS PUBLICADAS",
+    "title": "Coleção Literária",
+    "subtitle": "Livros que unem filosofia, espiritualidade e direito em palavras que permanecem.",
     "card1": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "O livro das 777 verdades",
+      "subtitle": "",
+      "description": "<strong>Um diálogo raro entre o humano e o divino.</strong> Cada página oferece respostas que não se leem apenas com os olhos, mas se reconhecem com a alma. Sua leitura é uma experiência que transforma, eleva e permanece.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card2": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "Um livro de vários títulos",
+      "subtitle": "",
+      "description": "<strong>Um mosaico de caminhos, onde cada página guarda um nome e cada nome revela um destino.</strong> Há muita força e beleza filosofal impactantes em suas frases. A sensibilidade do leitor é despertada.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card3": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "Os guardiões da luz",
+      "subtitle": "",
+      "description": "<strong>Filosofia transcendental que atravessa fronteiras e símbolos.</strong> Serve ao maçom e ao não maçom, conduzindo qualquer buscado a compreender, com clareza e profundidade, os princípios que sustentam a Maçonaria e iluminam toda a jornada sincera pela verdade, dever maior de cada ser humano.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card4": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir",
+      "title": "A mulher deve ser o templo, o homem o Deus que a habita",
+      "subtitle": "",
+      "description": "<strong>Um hino de voluptuosidade sagrada</strong>, onde o feminino se ergue como altar vivo e o masculino se oferece como divindade ardente, fundindo corpo e alma na mesma chama.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais",
       "servicesButton": "A_Definir"
     },
     "card5": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "A escada esquecida",
+      "subtitle": "",
+      "description": "<strong>O Livro que a Maçonaria precisa, mas ainda teme ler.</Strong/> Esta obra não se ergue contra a Maçonaria; ergue-se em favor dela, como guardiã que vela pelo templo sagrado que lhe foi confiado. Escrita por quem a carrega desde o berço, é expressão para que a Luz da Ordem permaneça acesa e incorruptível, a guiar corações e consciências.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card6": {
       "title": "A_Definir",
       "subtitle": "A_Definir",
       "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
+      "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "A_Definir"
     }
   },
@@ -83,12 +83,13 @@
     "imagem": {
       "alt": "imagem about"
     },
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "O ESCRITOR",
+    "title": "Dr. Toneza Cascaes Netto",
+    "subtitle": "A voz que transcende tribunais, livros e ideias, conduzindo à verdadeira dignidade.",
     "buttonModalLabelAbout": "Continuar lendo",
-    "paragraph": "A_Definir",
-    "modal": "a_Definir",
+    "paragraph": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana. ",
+    "modal": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana.  <br/><br/> No exercício da advocacia, sua palavra tem servido em pareceres de elevada relevância e em sustentações orais que ecoam nos tribunais como testemunhos em favor da justiça viva. Sua experiência se expande ainda na condição de auditor e consultor jurídico, orientando empresas que necessitam de direção ética em sua gestão legal, conduzindo com precisão a coordenação e a contratação de profissionais que atuam sob sua supervisão direta. <br/><br/> Essa trajetória jurídica encontra ressonância em outras dimensões de sua vida intelectual e espiritual.  <br/><br/> Como sociólogo, observa os movimentos sociais com sensibilidade atenta; como filósofo, busca os fundamentos que sustentam a existência; como radiestesista por natureza, percebe a energia sutil que anima a vida. O conjunto dessas perspectivas confere amplitude e densidade a cada palavra escrita e a cada ato profissional.  <br/><br/> Dessa síntese nasceu sua obra literária, formada por dezenas e dezenas de livros que, aos poucos, se tornam acessíveis em diversos idiomas, despertando consciência e oferecendo horizontes de transformação interior. ",
+    "ctaText": "Quer saber mais sobre nós? Clique abaixo 👇",
     "ctaButtonAriaLabel": "",
     "ctaButtonText": "Entre em contato",
     "aboutSocial": {

@@ -72,10 +72,16 @@ export default function FeaturesButton({ colorMode }) {
                       t(`features.card${i}.subtitle`),
                       <ServiceDetailCard
                         img={card.img}
-                        description={t(`features.card${i}.description`)}
+                        description={
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: t(`features.card${i}.description`),
+                            }}
+                          />
+                        }
                         buttonIcon={card.icon}
                         buttonLabel={t(`features.card${i}.buttonLabelModal`)}
-                        buttonLink={content.texts.links.ctaWhatsapp}
+                        buttonLink={card.buttonLink}
                         bgPosition="bg-top"
                       />
                     )
