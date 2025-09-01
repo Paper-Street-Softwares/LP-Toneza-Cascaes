@@ -11,66 +11,65 @@
       "home": "Início",
       "service": "Serviços",
       "about": "Sobre Nós",
-      "faq": "Perguntas Frequentes",
-      "maps": "Mapa"
+      "faq": "Perguntas Frequentes"
     },
     "ctaButtonText": "Contato",
     "ctaButtonTextResponsive": "Contato"
   },
   "hero": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir <span class=\"text-primary font-bold\">A_Definir</span>",
-    "subtitle": "A_Definir",
-    "ctaButtonText": "A_Definir",
+    "miniTag": "",
+    "title": "Descubra a palavra que <span class=\"text-primary font-bold\">transforma</span>",
+    "subtitle": "Obras que elevam a consciência e inspiram a reflexão profunda em cada leitor.",
+    "ctaButtonText": "Explorar coleção",
     "obsHero": {
-      "text": "A_Definir"
+      "text": "Cada obra é um convite à reflexão profunda e ao despertar da consciência."
     }
   },
   "features": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "OBRAS PUBLICADAS",
+    "title": "Coleção Literária",
+    "subtitle": "Livros que unem filosofia, espiritualidade e direito em palavras que permanecem.",
     "card1": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "O livro das 777 verdades",
+      "subtitle": "",
+      "description": "<strong>Um diálogo raro entre o humano e o divino.</strong> Cada página oferece respostas que não se leem apenas com os olhos, mas se reconhecem com a alma. Sua leitura é uma experiência que transforma, eleva e permanece.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card2": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "Um livro de vários títulos",
+      "subtitle": "",
+      "description": "<strong>Um mosaico de caminhos, onde cada página guarda um nome e cada nome revela um destino.</strong> Há muita força e beleza filosofal impactantes em suas frases. A sensibilidade do leitor é despertada.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card3": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "Os guardiões da luz",
+      "subtitle": "",
+      "description": "<strong>Filosofia transcendental que atravessa fronteiras e símbolos.</strong> Serve ao maçom e ao não maçom, conduzindo qualquer buscado a compreender, com clareza e profundidade, os princípios que sustentam a Maçonaria e iluminam toda a jornada sincera pela verdade, dever maior de cada ser humano.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card4": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir",
+      "title": "A mulher deve ser o templo, o homem o Deus que a habita",
+      "subtitle": "",
+      "description": "<strong>Um hino de voluptuosidade sagrada</strong>, onde o feminino se ergue como altar vivo e o masculino se oferece como divindade ardente, fundindo corpo e alma na mesma chama.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais",
       "servicesButton": "A_Definir"
     },
     "card5": {
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
-      "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
-      "buttonLabel": "A_Definir"
+      "title": "A escada esquecida",
+      "subtitle": "",
+      "description": "<strong>O Livro que a Maçonaria precisa, mas ainda teme ler.</Strong/> Esta obra não se ergue contra a Maçonaria; ergue-se em favor dela, como guardiã que vela pelo templo sagrado que lhe foi confiado. Escrita por quem a carrega desde o berço, é expressão para que a Luz da Ordem permaneça acesa e incorruptível, a guiar corações e consciências.",
+      "buttonLabelModal": "Prévia exclusiva",
+      "buttonLabel": "Saiba mais"
     },
     "card6": {
       "title": "A_Definir",
       "subtitle": "A_Definir",
       "description": "A_Definir",
-      "buttonLabelModal": "A_Definir",
+      "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "A_Definir"
     }
   },
@@ -84,18 +83,20 @@
     "imagem": {
       "alt": "imagem about"
     },
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "O ESCRITOR",
+    "title": "Dr. Toneza Cascaes Netto",
+    "subtitle": "A voz que transcende tribunais, livros e ideias, conduzindo à verdadeira dignidade.",
     "buttonModalLabelAbout": "Continuar lendo",
-    "paragraph":"A_Definir",
-    "modal": "a_Definir",
+    "paragraph": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana. ",
+    "modal": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana.  <br/><br/> No exercício da advocacia, sua palavra tem servido em pareceres de elevada relevância e em sustentações orais que ecoam nos tribunais como testemunhos em favor da justiça viva. Sua experiência se expande ainda na condição de auditor e consultor jurídico, orientando empresas que necessitam de direção ética em sua gestão legal, conduzindo com precisão a coordenação e a contratação de profissionais que atuam sob sua supervisão direta. <br/><br/> Essa trajetória jurídica encontra ressonância em outras dimensões de sua vida intelectual e espiritual.  <br/><br/> Como sociólogo, observa os movimentos sociais com sensibilidade atenta; como filósofo, busca os fundamentos que sustentam a existência; como radiestesista por natureza, percebe a energia sutil que anima a vida. O conjunto dessas perspectivas confere amplitude e densidade a cada palavra escrita e a cada ato profissional.  <br/><br/> Dessa síntese nasceu sua obra literária, formada por dezenas e dezenas de livros que, aos poucos, se tornam acessíveis em diversos idiomas, despertando consciência e oferecendo horizontes de transformação interior. ",
+    "ctaText": "Quer saber mais sobre nós? Clique abaixo 👇",
     "ctaButtonAriaLabel": "",
     "ctaButtonText": "Entre em contato",
     "aboutSocial": {
-      "miniTag": "A_Definir",
-      "title": "A_Definir",
-      "subtitle": "A_Definir",
+      "miniTag": "A EDITORA",
+      "title": "Organizações Toneza Cascaes Editora & Cultura",
+      "subtitle": "",
+      "description": "Desse mesmo impulso surgiu a Organizações Toneza Cascaes Editora & Cultura. Inicialmente criada para abrigar sua produção autoral, tornou-se espaço de acolhida para escritores que compartilham o propósito de elevar a consciência humana.  <br/><br/> A editora não se limita a publicar livros, mas se dedica a semear ideias que preservam valores essenciais e reacendem no leitor a lembrança de sua própria dignidade. Cada publicação é concebida como ato jurídico e espiritual, uma peça de cultura que defende a humanidade, honra a consciência e abre caminhos de liberdade interior. <br/><br/> A proposta editorial segue esse espírito: unir rigor intelectual e profundidade ética, tradição e inovação, filosofia e espiritualidade, palavra e silêncio. Por isso, ao lado das edições tradicionais, oferece também experiências digitais como o Flipbook, que devolvem ao leitor o prazer de folhear como quem toca uma obra viva. <br/><br/> A história de Toneza Cascaes e a história da Editora caminham juntas. Ambas nasceram do mesmo gesto de serviço e se realizam no mesmo destino: transformar conhecimento em cultura, escrita em consciência, verbo em semente de esperança.",
       "labelInstagram": "A_Definir",
       "labelFacebook": "A_Definir",
       "labelLinkedin": "A_Definir",
@@ -103,10 +104,11 @@
     }
   },
   "ctaSecondary": {
-    "title": "<span class=\"text-primary font-bold\">Dúvidas?</span> Entre em contato conosco para podermos lhe ajudar, <span class=\"text-primary font-bold\">estamos te esperando.</span>",
-    "subtitleDireitaPartes": ["E N T R E", "E M", "C O N T A T O", "V I A"],
+    "minitag": "Convite à Leitura",
+    "title": "Descubra as obras de <span class=\"text-primary font-bold\"> Dr. Toneza Cascaes Netto</span> e da <span class=\"text-primary font-bold\">Editora & Cultura</span> ",
+    "subtitleDireitaPartes": "Palavras que transcendem o tempo e acendem novos horizontes de consciência.",
     "titleDireita": "WhatsApp",
-    "ctaButtonText": "Entre em Contato"
+    "ctaButtonText": "Conheça a coleção"
   },
   "steps": {
     "miniTag": "PASSO A PASSO",
@@ -146,23 +148,23 @@
   "faq": {
     "miniTag": "TIRE SUAS DÚVIDAS",
     "title": "Perguntas Frequentes",
-    "subtitle": "Confira as perguntas abaixo para esclarecer suas dúvidas.",
+    "subtitle": "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
     "questions": {
       "question1": {
-        "question": "Como posso contratar seus serviços?",
-        "answer": "Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos."
+        "question": "É possível adquirir os livros em formato digital?",
+        "answer": "Sim. Além das edições tradicionais, oferecemos experiências digitais como o Flipbook, que permitem ao leitor folhear a obra como se tivesse um exemplar físico em mãos."
       },
       "question2": {
-        "question": "Qual é o prazo médio para resolução de um caso?",
-        "answer": "O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial."
+        "question": "Onde posso encontrar as publicações?",
+        "answer": "As obras estão disponíveis diretamente pela Editora e, progressivamente, em diversas plataformas e idiomas, ampliando o alcance da mensagem ao público internacional."
       },
       "question3": {
-        "question": "Quais documentos devo levar para a consulta?",
-        "answer": "Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência."
+        "question": "Os livros da Editora têm tradução para outros idiomas?",
+        "answer": "Sim. Diversas obras já estão sendo traduzidas e publicadas em diferentes idiomas, tornando o pensamento e a mensagem acessíveis a leitores ao redor do mundo."
       },
       "question4": {
-        "question": "Vocês oferecem serviços de consultoria preventiva?",
-        "answer": "Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal."
+        "question": "Qual é o diferencial da Editora em relação a outras casas editoriais?",
+        "answer": "Nosso propósito vai além da publicação: cada obra é concebida como um ato jurídico e espiritual, destinada a despertar consciência, preservar a dignidade e oferecer horizontes de transformação interior."
       }
     },
     "paragraph": "Clique aqui caso tenha mais dúvidas"
