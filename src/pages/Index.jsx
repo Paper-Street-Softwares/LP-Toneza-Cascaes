@@ -59,8 +59,8 @@ export default function Index() {
         colorMode={colorMode}
         appDownloadButtons={false}
         defaultHero={false}
-        influencer={true}
-        mesclado={false}
+        influencer={false}
+        mesclado={true}
       />
 
       <Features

@@ -17,12 +17,12 @@
     "ctaButtonTextResponsive": "Contato"
   },
   "hero": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir <span class=\"text-primary font-bold\">A_Definir</span>",
-    "subtitle": "A_Definir",
-    "ctaButtonText": "A_Definir",
+    "miniTag": "",
+    "title": "Descubra a palavra que <span class=\"text-primary font-bold\">transforma</span>",
+    "subtitle": "Obras que elevam a consciência e inspiram a reflexão profunda em cada leitor.",
+    "ctaButtonText": "Explorar coleção",
     "obsHero": {
-      "text": "A_Definir"
+      "text": "Cada obra é um convite à reflexão profunda e ao despertar da consciência."
     }
   },
   "features": {
