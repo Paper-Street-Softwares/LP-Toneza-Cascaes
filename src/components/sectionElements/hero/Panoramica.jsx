@@ -68,6 +68,12 @@ export default function Panoramica({ appDownloadButtons }) {
                         label={t("hero.ctaButtonText")}
                         animation
                         className="w-[100%]"
+                        onClick={() => {
+                          const ctaSection = document.getElementById("cta");
+                          if (ctaSection) {
+                            ctaSection.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }}
                         icon={
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -200,6 +206,14 @@ export default function Panoramica({ appDownloadButtons }) {
                             label={t("hero.ctaButtonText")}
                             animation
                             className="w-[100%]"
+                            onClick={() => {
+                              const ctaSection = document.getElementById("cta");
+                              if (ctaSection) {
+                                ctaSection.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+                            }}
                             icon={
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
