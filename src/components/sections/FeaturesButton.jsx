@@ -37,7 +37,7 @@ export default function FeaturesButton({ colorMode }) {
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const textClass = textClasses[colorMode] || textClasses.default;
 
-  const cardNumbers = [1, 2, 3];
+  const cardNumbers = [1, 2, 3, 4, 5];
 
   return (
     <>
