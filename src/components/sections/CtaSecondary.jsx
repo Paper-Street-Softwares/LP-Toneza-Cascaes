@@ -119,11 +119,9 @@ export default function Cta({ colorMode = "default" }) {
         <div className="text-paragraph3">
           <p
             className="mb-4"
-            dangerouslySetInnerHTML={{ __html: t("hero.modalSubtitle") }}
-          />
-          <p
-            className="mb-6"
-            dangerouslySetInnerHTML={{ __html: t("hero.modalDescription") }}
+            dangerouslySetInnerHTML={{
+              __html: t("ctaSecondary.subtitleDireitaPartes"),
+            }}
           />
 
           <ul className="space-y-4">
