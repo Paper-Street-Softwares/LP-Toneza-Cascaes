@@ -45,18 +45,18 @@ export default function FooterSocial({ colorMode, addres, obs, mode }) {
           <div className="w-full max-w-[1215px] flex flex-col gap-y-[80px] desktop1:flex-row desktop1:justify-between">
             {/* Coluna 1 */}
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px] text-paragraph3">
-              <LogoFooter />
-              <PhoneFooter colorMode={colorMode} />
+              {/* <LogoFooter /> */}
+              {/* <PhoneFooter colorMode={colorMode} />
               <EmailFooter />
               {addres && <AdressFooter />}
               <ExpedienteFooter />
-              {obs && <ObsFooter />}
+              {obs && <ObsFooter />} */}
             </div>
 
             {/* Coluna 2 */}
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px]">
-              <MidTextFooter />
-              <ParagrapfFooter />
+              {/* <MidTextFooter /> */}
+              {/* <ParagrapfFooter /> */}
               <MotionDivDownToUp>
                 {/* Aqui os textos foram atualizados */}
                 <p className="opacity-90">
@@ -78,8 +78,8 @@ export default function FooterSocial({ colorMode, addres, obs, mode }) {
 
             {/* Coluna 3 */}
             <div className="flex flex-col gap-y-[16px] desktop1:w-[290px]">
-              <NavegationTextFooter />
-              <LinksNavegationFooter mode={mode} />
+              {/* <NavegationTextFooter /> */}
+              {/* <LinksNavegationFooter mode={mode} /> */}
             </div>
           </div>
           <CopyrightFooter />
