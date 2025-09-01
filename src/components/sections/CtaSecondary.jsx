@@ -54,11 +54,12 @@ export default function Cta({ colorMode = "default" }) {
 
   return (
     <>
-      <SectionArea className={`${bgClass}`} paddingbot={true}>
+      <SectionArea className={`${bgClass}`} paddingbot={true} id="cta">
         <SectionWrapper>
           <SectionHeader
             colorMode="dark"
             className={`text-center ${textClass}`}
+            miniTitle={t("ctaSecondary.minitag")}
             sectionHeaderTitle={
               <span
                 dangerouslySetInnerHTML={{
@@ -75,7 +76,6 @@ export default function Cta({ colorMode = "default" }) {
             }
             titleColorSet={textClass}
             subtitleColorSet={textClass}
-            miniTitleBgColor={false}
             type=""
           />
           <Button
