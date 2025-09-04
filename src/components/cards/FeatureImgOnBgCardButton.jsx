@@ -35,7 +35,7 @@ export default function FeatureImgOnBgCardButton(props) {
   return (
     <Wrapper className="w-full flex flex-col max-w-[340px] rounded-xl border border-gray-200 shadow-md bg-white font-mainFont">
       {/* Imagem */}
-      <div className="w-full h-[380px] flex justify-center items-center ">
+      <div className="w-full desktop1:h-[380px] flex justify-center items-center ">
         <img
           src={bgImg}
           alt={title}

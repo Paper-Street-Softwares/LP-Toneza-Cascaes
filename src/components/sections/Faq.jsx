@@ -40,7 +40,7 @@ export default function Faq({ colorMode }) {
       <SectionArea id="faq" className={`${bgClass}`}>
         <SectionHeader
           colorMode="dark"
-          className="text-center"
+          className="text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]"
           miniTitle={t("faq.miniTag")}
           sectionHeaderTitle={t("faq.title")}
           sectionHeaderSubtitle={t("faq.subtitle")}
@@ -57,9 +57,10 @@ export default function Faq({ colorMode }) {
             <Paragraphs className={`text-center transition`}>
               <Button
                 className="hoover:scale-0 desktop1:hover:scale-10 transition-all duration-300"
-                color=""
+                color="bg-black "
                 label={t("faq.paragraph")}
                 colorMode={colorMode}
+                labelColor="text-primary"
               />
             </Paragraphs>
           </MotionDivDownToUp>

@@ -161,11 +161,11 @@ const content = {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-map-pin-check"
+            class="lucide lucide-book-open-check-icon lucide-book-open-check"
           >
-            <path d="M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728" />
-            <circle cx="12" cy="10" r="3" />
-            <path d="m16 18 2 2 4-4" />
+            <path d="M12 21V7" />
+            <path d="m16 12 2 2 4-4" />
+            <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
           </svg>
         ),
         text: "A_Definir",
@@ -501,26 +501,24 @@ const content = {
         "Converse com nossa equipe. Estamos prontos para oferecer a orientação jurídica de que você precisa.",
       ctaButtonText: "Entre em contato pelo WhatsApp",
     },
-    ctaSecondary: {
-      backgroundImg: ctaWhatsappImgBg,
-      // miniTag: "FALE CONOSCO",
-      title: (
-        <h1>
-          <span className="text-bgSectionDark">Dúvidas?</span> Entre em contato
-          conosco para podermos lhe ajudar,{" "}
-          <span className="text-bgSectionDark">estamos te esperando.</span>
-        </h1>
-      ),
-      subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-        </p>
-      ),
-      titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      ),
-      ctaButtonText: "Falar agora",
-    },
+    // ctaSecondary: {
+    //   backgroundImg: ctaWhatsappImgBg,
+    //   // miniTag: "FALE CONOSCO",
+    //   title: (
+    //     <h1>
+    //       <span className="text-bgSectionDark">Dúvidas?</span> Entre em contato
+    //       conosco para podermos lhe ajudar,{" "}
+    //       <span className="text-bgSectionDark">estamos te esperando.</span>
+    //     </h1>
+    //   ),
+    //   subtitleDireita: (
+    //     <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+    //       <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+    //     </p>
+    //   ),
+    //   titleDireita: <h1 className="text-title5 font-mainFont">WhatsApp</h1>,
+    //   ctaButtonText: "Falar agora",
+    // },
     steps: {
       miniTag: "PASSO A PASSO",
       title: "Como funciona nosso atendimento?",

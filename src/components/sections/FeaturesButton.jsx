@@ -48,7 +48,7 @@ export default function FeaturesButton({ colorMode }) {
       >
         <SectionArea id="service" className="">
           <SectionHeader
-            className={`text-center ${textClass}`}
+            className={`text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px] ${textClass}`}
             miniTitle={t("features.miniTag", { defaultValue: "Recursos" })}
             sectionHeaderTitle={t("features.title", {
               defaultValue: "Nossos Livros",
