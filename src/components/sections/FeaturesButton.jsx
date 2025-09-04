@@ -58,6 +58,8 @@ export default function FeaturesButton({ colorMode }) {
             })}
             titleColorSet={textClass}
             subtitleColorSet={textClass}
+            miniTitleBgColor="bg-minititle"
+            miniTitleTextColor="text-minititleLightLabel"
           />
 
           <SectionWrapper>
