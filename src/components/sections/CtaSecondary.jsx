@@ -8,6 +8,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { Dialog } from "primereact/dialog";
+import bgClaro from "../../assets/imgs/hero/backgroundLight.webp";
 
 export default function Cta({ colorMode = "default" }) {
   const navigate = useNavigate();
@@ -42,7 +43,7 @@ export default function Cta({ colorMode = "default" }) {
   const bgClasses = {
     dark: "bg-bgSectionOpacityDark",
     light: "bg-bgSectionOpacityLight",
-    default: "squares",
+    default: "",
   };
   const textClasses = {
     dark: "text-white",
@@ -54,55 +55,64 @@ export default function Cta({ colorMode = "default" }) {
 
   return (
     <>
-      <SectionArea className={`${bgClass}`} paddingbot={true} id="cta">
-        <SectionWrapper>
-          <SectionHeader
-            colorMode="dark"
-            className={`text-center ${textClass}`}
-            miniTitle={t("ctaSecondary.minitag")}
-            sectionHeaderTitle={
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: t("ctaSecondary.title"),
-                }}
-              />
-            }
-            sectionHeaderSubtitle={
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: t("ctaSecondary.subtitleDireitaPartes"),
-                }}
-              />
-            }
-            titleColorSet={textClass}
-            subtitleColorSet={textClass}
-            type=""
-          />
-          <Button
-            className="bg-buttonColor text-labelButtons px-6 py-3 rounded-2xl hover:scale-105 transition"
-            label={t("ctaSecondary.ctaButtonText")}
-            onClick={() => setVisible(true)}
-            icon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-book-open-check-icon lucide-book-open-check"
-              >
-                <path d="M12 21V7" />
-                <path d="m16 12 2 2 4-4" />
-                <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
-              </svg>
-            }
-          />
-        </SectionWrapper>
-      </SectionArea>
+      <div
+        style={{
+          backgroundImage: `url(${bgClaro})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <SectionArea className={`${bgClass}`} paddingbot={true} id="cta">
+          <SectionWrapper>
+            <SectionHeader
+              colorMode="dark"
+              className={`text-center ${textClass}`}
+              miniTitle={t("ctaSecondary.minitag")}
+              sectionHeaderTitle={
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t("ctaSecondary.title"),
+                  }}
+                />
+              }
+              sectionHeaderSubtitle={
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t("ctaSecondary.subtitleDireitaPartes"),
+                  }}
+                />
+              }
+              titleColorSet={textClass}
+              subtitleColorSet={textClass}
+              type=""
+            />
+            <Button
+              className="bg-buttonColor text-labelButtons px-6 py-3 rounded-2xl hover:scale-105 transition"
+              label={t("ctaSecondary.ctaButtonText")}
+              onClick={() => setVisible(true)}
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-book-open-check-icon lucide-book-open-check"
+                >
+                  <path d="M12 21V7" />
+                  <path d="m16 12 2 2 4-4" />
+                  <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
+                </svg>
+              }
+            />
+          </SectionWrapper>
+        </SectionArea>
+      </div>
 
       {/* Modal */}
       <Dialog

@@ -40,6 +40,7 @@ import teamMemberImg1 from "../assets/imgs/team/team1.webp";
 import teamMemberImg2 from "../assets/imgs/team/team2.webp";
 import teamMemberImg3 from "../assets/imgs/team/team3.webp";
 import teamMemberImg4 from "../assets/imgs/team/team4.webp";
+import bgClaro from "../assets/imgs/hero/backgroundLight.webp";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.webp";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.webp";
@@ -146,6 +147,7 @@ const content = {
       heroImg: bgHeroImg, //fundo da Hero
       heroDefaultImage: heroDefaultImg, //imagem da heroDefault Mobile
       backgroundPerson: backgroundPersonMobile,
+      backgroundLight: bgClaro, //coloca o fundo claro na hero
       ctaButtonText: "A_Definir",
       obsHero: {
         icon: (
