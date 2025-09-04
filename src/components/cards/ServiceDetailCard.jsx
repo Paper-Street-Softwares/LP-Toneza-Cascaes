@@ -27,7 +27,7 @@ export default function ServiceDetailCard(props) {
             <img
               src={img}
               alt={bookTitle}
-              className="mr-auto rounded-md desktop2:max-h-[400px] w-auto object-contain"
+              className="mr-auto rounded-md desktop2:max-h-[400px] w-auto"
             />
           ) : (
             <div className="w-auto bg-gray-300 rounded-md mb-4" />
