@@ -147,9 +147,9 @@ export default function FeaturesButton({ colorMode }) {
         header="Saiba mais"
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "50vw" }}
+        style={{ width: "30vw" }}
         breakpoints={{
-          "1440px": "80vw",
+          "1440px": "60vw",
           "1024px": "80vw",
           "768px": "80vw",
           "640px": "90vw",

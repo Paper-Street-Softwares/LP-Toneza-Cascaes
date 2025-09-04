@@ -36,11 +36,7 @@ export default function FeatureImgOnBgCardButton(props) {
     <Wrapper className="w-full max-w-[340px] rounded-xl border border-gray-200 shadow-md bg-white">
       {/* Imagem */}
       <div className="w-full h-[480px] flex justify-center items-center ">
-        <img
-          src={bgImg}
-          alt={title}
-          className="w-full h-full object-cover p-[40px]"
-        />
+        <img src={bgImg} alt={title} className="w-full h-full object-cover rounded-t-xl " />
       </div>
 
       {/* Conteúdo */}
