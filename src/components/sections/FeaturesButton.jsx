@@ -146,7 +146,7 @@ export default function FeaturesButton({ colorMode }) {
       <Dialog
         className={`font-secondFont ${textClass} h-auto [@media(max-width:425px)]:h-[85vh]`}
         closeIcon={<X size={20} />}
-        header="Saiba mais"
+        header=" Informações do Livro"
         visible={visible}
         onHide={() => setVisible(false)}
         style={{ width: "40vw" }}
