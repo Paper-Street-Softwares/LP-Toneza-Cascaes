@@ -32,7 +32,7 @@ export default function Panoramica({ appDownloadButtons }) {
     <>
       <div id="home">
         {/* mobile */}
-        <div className="w-full bg-top bg-repeat font-mainFont bg-gradient-to-b from-darker to-bgSectionDark desktop1:hidden">
+        <div className="w-full bg-top bg-repeat font-mainFont bg-gradient-to-b from-darker to-bgSectionDark desktop1:hidden text-justify">
           <div className="relative z-10 flex w-full bg-colorBlack bg-opacity-0 items-left">
             <div className="w-full text-secondary justify-evenly">
               <div className="h-[125px] desktop3:h-[140px]" />
@@ -158,7 +158,7 @@ export default function Panoramica({ appDownloadButtons }) {
         </div>
         {/* desktop */}
         <div
-          className="hidden w-full bg-top bg-repeat bg-cover font-mainFont desktop1:flex desktop1:justify-center "
+          className="hidden w-full bg-top bg-repeat bg-cover font-mainFont desktop1:flex desktop1:justify-center text-justify "
           style={{
             backgroundImage: `url(${
               window.innerWidth < 1024

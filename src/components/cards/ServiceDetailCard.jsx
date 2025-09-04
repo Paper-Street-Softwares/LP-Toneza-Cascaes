@@ -10,32 +10,60 @@ export default function ServiceDetailCard(props) {
     buttonIcon,
     buttonLink,
     bgPosition,
+    bookTitle = "Título indefinido",
+    bookAuthor = "Autor indefinido",
+    bookDescription = "Descrição indefinida",
+    bookYear = "Ano indefinido",
+    linkPrevia,
+    linkShare,
   } = props;
 
   return (
-    <div className="w-full flex flex-col gap-[16px]">
-      <div className="w-full">
-        <div
-          style={{
-            backgroundImage: `url(${img})`,
-          }}
-          className={`w-[100%] h-[250px] phone2:h-[300px] phone3:h-[400px] desktop1:h-[400px] desktop2:min-h-[500px] bg-no-repeat bg-cover ${bgPosition}`}
-        />
-      </div>
-      <div className="flex flex-col gap-[32px]">
-        <div className="flex flex-col gap-[12px]">
-          <h1 className="font-bold text-paragraph5 text-secondary opacity-70">
-            {subtitle}
-          </h1>
-          <p className="text-paragraph3">{description}</p>
+    <div className="w-full flex flex-col items-center desktop1:items-start">
+      <div className="flex flex-col desktop1:flex-row rounded-2xl w-full gap-4 ">
+        {/* Imagem */}
+        <div className="flex flex-col min-h-[300px] items-center justify-center w-full desktop1:size-[30%] ">
+          {img ? (
+            <img
+              src={img}
+              alt={bookTitle}
+              className="mr-auto rounded-md desktop2:max-h-[400px] w-auto"
+            />
+          ) : (
+            <div className="w-auto bg-gray-300 rounded-md mb-4" />
+          )}
         </div>
-        <div className="">
-          <Button
-            label={buttonLabel}
-            icon={buttonIcon}
-            buttonLink={buttonLink}
-            animation={false}
-          />
+
+        {/* Conteúdo */}
+        <div className="desktop1:p-4 w-full desktop1:w-2/3 ">
+          <div className="flex space-x-6 mb-4 text-sm text-gray-500 border-b border-gray-200 pb-2 desktop1:hidden"></div>
+
+          <p className="text-sm text-gray-400 mb-2">{bookYear}</p>
+          <h2 className="text-2xl font-bold text-slate-800">{bookTitle}</h2>
+          <h3 className="text-gray-500 my-2">{bookAuthor}</h3>
+
+          <p className="text-black/50 text-sm leading-relaxed mb-6">
+            {bookDescription}
+          </p>
+
+          <div className="flex space-x-4">
+            {linkPrevia && (
+              <Button
+                label="Prévia exclusiva"
+                buttonLink={linkPrevia}
+                animation={false}
+                size="small"
+              />
+            )}
+            {linkShare && (
+              <Button
+                label="Compre aqui"
+                buttonLink={linkShare}
+                animation={false}
+                size="small"
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -40,6 +40,7 @@ import teamMemberImg1 from "../assets/imgs/team/team1.webp";
 import teamMemberImg2 from "../assets/imgs/team/team2.webp";
 import teamMemberImg3 from "../assets/imgs/team/team3.webp";
 import teamMemberImg4 from "../assets/imgs/team/team4.webp";
+import bgClaro from "../assets/imgs/hero/backgroundLight.webp";
 
 import imgTestimonial1 from "../assets/imgs/testimonials/deposition1.webp";
 import imgTestimonial2 from "../assets/imgs/testimonials/deposition2.webp";
@@ -146,6 +147,7 @@ const content = {
       heroImg: bgHeroImg, //fundo da Hero
       heroDefaultImage: heroDefaultImg, //imagem da heroDefault Mobile
       backgroundPerson: backgroundPersonMobile,
+      backgroundLight: bgClaro, //coloca o fundo claro na hero
       ctaButtonText: "A_Definir",
       obsHero: {
         icon: (
@@ -227,9 +229,11 @@ const content = {
             <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3" />
           </svg>
         ),
+        bookYear: "2025",
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
-        buttonLink: "https://tonezacascaes.aflip.in/40b6b96c69.html",
+        linkPrevia: "https://tonezacascaes.aflip.in/40b6b96c69.html",
+        linkShare: "https://pay.hotmart.com/A101084251R",
       },
       card2: {
         img: featuresImg2,
@@ -264,7 +268,8 @@ const content = {
         ),
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
-        buttonLink: "https://tonezacascaes.aflip.in/c8a689ca42.html",
+        linkPrevia: "https://tonezacascaes.aflip.in/c8a689ca42.html",
+        linkShare: "https://pay.hotmart.com/B100911746E",
       },
       card3: {
         img: featuresImg3,
@@ -298,7 +303,8 @@ const content = {
         ),
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
-        buttonLink: "https://tonezacascaes.aflip.in/7860d4be58.html",
+        linkPrevia: "https://tonezacascaes.aflip.in/7860d4be58.html",
+        linkShare: "https://pay.hotmart.com/K100883197L",
       },
       card4: {
         img: featuresImg4,
@@ -333,7 +339,8 @@ const content = {
         ),
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
-        buttonLink: "https://tonezacascaes.aflip.in/b50e745439.html",
+        linkPrevia: "https://tonezacascaes.aflip.in/b50e745439.html",
+        linkShare: "https://pay.hotmart.com/S101157235K",
       },
       card5: {
         img: featuresImg5,
@@ -368,7 +375,8 @@ const content = {
         ),
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
-        buttonLink: "https://tonezacascaes.aflip.in/b52ea98ce2.html",
+        linkPrevia: "https://tonezacascaes.aflip.in/b52ea98ce2.html",
+        linkShare: "https://pay.hotmart.com/Q101488384Y",
       },
       card6: {
         img: 3,
