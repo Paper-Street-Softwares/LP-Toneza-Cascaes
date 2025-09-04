@@ -8,7 +8,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { Dialog } from "primereact/dialog";
-import bgClaro from "../../assets/imgs/hero/backgroundLight.webp";
+import bgClaro from "../../assets/imgs/cta/backgroundLight.webp";
 
 export default function Cta({ colorMode = "default" }) {
   const navigate = useNavigate();

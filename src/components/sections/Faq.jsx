@@ -8,7 +8,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import AccordionExpandDefault from "../interactives/AcordionTwo";
 import Button from "../interactives/Button";
 import content from "../../content/content";
-import bgClaro from "../../assets/imgs/hero/backgroundLight.webp";
+import bgClaro from "../../assets/imgs/cta/backgroundLight.webp";
 
 export default function Faq({ colorMode }) {
   const { t } = useTranslation();
