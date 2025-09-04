@@ -95,17 +95,17 @@ export default function FeaturesButton({ colorMode }) {
       </SectionArea>
 
       <Dialog
-        className={`font-secondFont ${bgClass} ${textClass}`}
+        className={`font-secondFont ${bgClass} ${textClass} h-[75vh] [@media(max-width:425px)]:h-[85vh]`}
         closeIcon={<X size={20} />}
         header={modalTitle}
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "30vw" }}
+        style={{ width: "30vw" }} // remove minHeight daqui
         breakpoints={{
-          "1440px": "25vw",
-          "1024px": "35vw",
-          "768px": "50vw",
-          "640px": "60vw",
+          "1440px": "70vw",
+          "1024px": "70vw",
+          "768px": "80vw",
+          "640px": "90vw",
           "639px": "80vw",
           "425px": "90vw",
         }}
