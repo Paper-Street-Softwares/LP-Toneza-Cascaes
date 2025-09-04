@@ -1,75 +1,75 @@
 import PropTypes from "prop-types";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import Button from "../interactives/Button";
+import { BookOpen, Calendar } from "lucide-react";
 
 export default function FeatureImgOnBgCardButton(props) {
   const {
     bgImg,
     title,
-    description,
+    subtitle,
     buttonLabel,
     buttonLink,
     onClick,
-    buttonColor,
-    bgPosition,
+    colorMode,
+    pages, // número de páginas
+    year, // ano de inauguração
+    animation = true,
   } = props;
 
   FeatureImgOnBgCardButton.propTypes = {
-    bgImg: PropTypes.any,
-    title: PropTypes.any,
-    description: PropTypes.any,
+    bgImg: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
     buttonLabel: PropTypes.string,
     buttonLink: PropTypes.string,
-    buttonColor: PropTypes.any,
+    colorMode: PropTypes.any,
     onClick: PropTypes.func,
-    bgPosition: PropTypes.any,
+    pages: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    year: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    animation: PropTypes.bool,
   };
 
+  const Wrapper = animation ? MotionDivDownToUp : "div";
+
   return (
-    <MotionDivDownToUp className="flex flex-wrap justify-between w-full max-w-[430px] gap-[36px] tablet1:gap-[24px] tablet1:w-[47%] desktop1:w-[325px]">
-      <div
-        className={`${bgPosition} w-full h-[600px] rounded-2xl flex flex-col justify-end bg-bottom bg-no-repeat bg-cover`}
-        style={{ backgroundImage: `url(${bgImg})` }}
-      >
-        <div className="flex items-end w-full h-full bg-colorBlack bg-opacity-10 rounded-2xl">
-          <MotionDivDownToUp className="w-full h-auto bg-bgSectionLight rounded-2xl p-[20px] mx-[10px] mb-[10px] flex flex-col">
-            <h1 className="font-mainFont font-medium text-[18px] desktop1:text-paragraph5 desktop2:text-[20px] mb-[10px]">
-              {title}
-            </h1>
-            <p className="font-secondFont text-paragraph3 desktop1:text-paragraph4 text-quaternary mb-[28px]">
-              {description}
-            </p>
-            <div>
-              <Button
-                removeAnchor={true}
-                label={buttonLabel}
-                buttonLink={buttonLink}
-                color={buttonColor}
-                className=""
-                size="small"
-                onClick={onClick}
-                icon={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-corner-down-right"
-                  >
-                    <polyline points="15 10 20 15 15 20" />
-                    <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                  </svg>
-                }
-              />
-            </div>
-          </MotionDivDownToUp>
+    <Wrapper className="w-full max-w-[340px] rounded-xl border border-gray-200 shadow-md bg-white">
+      {/* Imagem */}
+      <div className="w-full h-[480px] flex justify-center items-center ">
+        <img
+          src={bgImg}
+          alt={title}
+          className="w-full h-full object-cover p-[40px]"
+        />
+      </div>
+
+      {/* Conteúdo */}
+      <div className="p-4 flex flex-col gap-2 justify-between min-h-[180px]">
+        <h1 className="font-bold text-title2 leading-6 text-gray-900">
+          {title}
+        </h1>
+        {subtitle && <p className="text-sm text-gray-600">{subtitle}</p>}
+
+        <div className="flex justify-between items-center mt-4">
+          <div className="flex gap-4 text-gray-600 text-sm">
+            <span className="flex items-center gap-1">
+              <BookOpen size={16} /> {pages}
+            </span>
+            <span className="flex items-center gap-1">
+              <Calendar size={16} /> {year}
+            </span>
+          </div>
+          <Button
+            removeAnchor={true}
+            label={buttonLabel || "Saiba mais"}
+            buttonLink={buttonLink}
+            color={colorMode}
+            size="small"
+            onClick={onClick}
+            className="bg-buttonColor rounded-lg "
+          />
         </div>
       </div>
-    </MotionDivDownToUp>
+    </Wrapper>
   );
 }

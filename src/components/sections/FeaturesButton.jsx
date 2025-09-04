@@ -15,7 +15,7 @@ export default function FeaturesButton({ colorMode }) {
   const [visible, setVisible] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalSubtitle, setModalSubtitle] = useState("");
-  const [modalContent, setModalContent] = useState("");
+  const [modalContent, setModalContent] = useState(null);
 
   const onClick = (title, subtitle, content) => {
     setModalTitle(title);
@@ -47,9 +47,13 @@ export default function FeaturesButton({ colorMode }) {
       >
         <SectionHeader
           className={`text-center ${textClass}`}
-          miniTitle={t("features.miniTag")}
-          sectionHeaderTitle={t("features.title")}
-          sectionHeaderSubtitle={t("features.subtitle")}
+          miniTitle={t("features.miniTag", { defaultValue: "Recursos" })}
+          sectionHeaderTitle={t("features.title", {
+            defaultValue: "Nossos Livros",
+          })}
+          sectionHeaderSubtitle={t("features.subtitle", {
+            defaultValue: "Descubra os detalhes",
+          })}
           titleColorSet={textClass}
           subtitleColorSet={textClass}
         />
@@ -58,31 +62,72 @@ export default function FeaturesButton({ colorMode }) {
           <div className="flex flex-wrap justify-center desktop1:justify-evenly w-full gap-[36px] tablet1:gap-[24px] desktop1:w-[90%]">
             {cardNumbers.map((i) => {
               const card = content.texts.features[`card${i}`];
+
               return (
                 <FeatureImgOnBgCardButton
                   key={i}
                   bgImg={card.img}
-                  title={t(`features.card${i}.title`)}
-                  description={t(`features.card${i}.subtitle`)}
-                  buttonLabel={t(`features.card${i}.buttonLabel`)}
+                  title={t(`features.card${i}.title`, {
+                    defaultValue: "Título indefinido",
+                  })}
+                  subtitle={t(`features.card${i}.subtitle`, {
+                    defaultValue: "",
+                  })}
+                  description={t(`features.card${i}.description`, {
+                    defaultValue: "",
+                  })}
+                  buttonLabel={t(`features.card${i}.buttonLabel`, {
+                    defaultValue: "Ver mais",
+                  })}
+                  pages={t(`features.card${i}.pages`, { defaultValue: "—" })}
+                  year={t(`features.card${i}.year`, { defaultValue: "—" })}
                   animation
                   onClick={() =>
                     onClick(
-                      t(`features.card${i}.title`),
-                      t(`features.card${i}.subtitle`),
+                      t(`features.card${i}.title`, {
+                        defaultValue: "Título indefinido",
+                      }),
+                      t(`features.card${i}.subtitle`, { defaultValue: "" }),
                       <ServiceDetailCard
                         img={card.img}
+                        subtitle={t(`features.card${i}.subtitle`, {
+                          defaultValue: "",
+                        })}
                         description={
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: t(`features.card${i}.description`),
+                              __html: t(`features.card${i}.description`, {
+                                defaultValue: "",
+                              }),
                             }}
                           />
                         }
                         buttonIcon={card.icon}
-                        buttonLabel={t(`features.card${i}.buttonLabelModal`)}
-                        buttonLink={card.buttonLink}
+                        buttonLabel={t(`features.card${i}.buttonLabelModal`, {
+                          defaultValue: "Ver mais",
+                        })}
+                        buttonLink={card.linkPrevia} // pode remover se não usar mais
                         bgPosition="bg-top"
+                        bookTitle={t(`features.card${i}.title`, {
+                          defaultValue: "Título indefinido",
+                        })}
+                        bookDescription={
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: t(`features.card${i}.description`, {
+                                defaultValue: "",
+                              }),
+                            }}
+                          />
+                        }
+                        bookAuthor={t(`features.card${i}.author`, {
+                          defaultValue: "Autor desconhecido",
+                        })}
+                        bookYear={t(`features.card${i}.year`, {
+                          defaultValue: "—",
+                        })}
+                        linkPrevia={card.linkPrevia} // 🔹 passa daqui
+                        linkShare={card.linkShare} // 🔹 passa daqui
                       />
                     )
                   }
@@ -94,23 +139,24 @@ export default function FeaturesButton({ colorMode }) {
         </SectionWrapper>
       </SectionArea>
 
+      {/* Modal */}
       <Dialog
-        className={`font-secondFont ${bgClass} ${textClass} h-[75vh] [@media(max-width:425px)]:h-[85vh]`}
+        className={`font-secondFont ${bgClass} ${textClass} h-auto [@media(max-width:425px)]:h-[85vh]`}
         closeIcon={<X size={20} />}
-        header={modalTitle}
+        // header={modalTitle}
+        header="Saiba mais"
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "30vw" }} // remove minHeight daqui
+        style={{ width: "50vw" }}
         breakpoints={{
-          "1440px": "70vw",
-          "1024px": "70vw",
+          "1440px": "80vw",
+          "1024px": "80vw",
           "768px": "80vw",
           "640px": "90vw",
-          "639px": "80vw",
           "425px": "90vw",
         }}
       >
-        <div className={textClass}>{modalSubtitle}</div>
+        {/* <div className={textClass}>{modalSubtitle}</div> */}
         <div className={`m-0 ${textClass}`}>{modalContent}</div>
       </Dialog>
     </>

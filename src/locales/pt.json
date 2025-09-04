@@ -31,37 +31,52 @@
     "subtitle": "Livros que unem filosofia, espiritualidade e direito em palavras que permanecem.",
     "card1": {
       "title": "O livro das 777 verdades",
-      "subtitle": "",
-      "description": "<strong>Um diálogo raro entre o humano e o divino.</strong> Cada página oferece respostas que não se leem apenas com os olhos, mas se reconhecem com a alma. Sua leitura é uma experiência que transforma, eleva e permanece.",
+      "subtitle": "Um diálogo raro entre o humano e o divino.",
+      "description": "Cada página oferece respostas que não se leem apenas com os olhos, mas se reconhecem com a alma. Sua leitura é uma experiência que transforma, eleva e permanece.",
+      "author": "Toneza Cascaes",
+      "year": "2025",
+      "pages": "42",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "Saiba mais"
     },
     "card2": {
       "title": "Um livro de vários títulos",
-      "subtitle": "",
-      "description": "<strong>Um mosaico de caminhos, onde cada página guarda um nome e cada nome revela um destino.</strong> Há muita força e beleza filosofal impactantes em suas frases. A sensibilidade do leitor é despertada.",
+      "subtitle": "Um mosaico de caminhos, onde cada página guarda um nome e cada nome revela um destino.",
+      "description": "Há muita força e beleza filosofal impactantes em suas frases. A sensibilidade do leitor é despertada.",
+      "author": "Toneza Cascaes",
+      "year": "2025",
+      "pages": "49",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "Saiba mais"
     },
     "card3": {
       "title": "Os guardiões da luz",
-      "subtitle": "",
-      "description": "<strong>Filosofia transcendental que atravessa fronteiras e símbolos.</strong> Serve ao maçom e ao não maçom, conduzindo qualquer buscado a compreender, com clareza e profundidade, os princípios que sustentam a Maçonaria e iluminam toda a jornada sincera pela verdade, dever maior de cada ser humano.",
+      "subtitle": "Filosofia transcendental que atravessa fronteiras e símbolos.",
+      "description": "Serve ao maçom e ao não maçom, conduzindo qualquer buscado a compreender, com clareza e profundidade, os princípios que sustentam a Maçonaria e iluminam toda a jornada sincera pela verdade, dever maior de cada ser humano.",
+      "author": "Toneza Cascaes",
+      "year": "2025",
+      "pages": "31",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "Saiba mais"
     },
     "card4": {
       "title": "A mulher deve ser o templo, o homem o Deus que a habita",
-      "subtitle": "",
-      "description": "<strong>Um hino de voluptuosidade sagrada</strong>, onde o feminino se ergue como altar vivo e o masculino se oferece como divindade ardente, fundindo corpo e alma na mesma chama.",
+      "subtitle": "Um hino de voluptuosidade sagrada",
+      "description": "Onde o feminino se ergue como altar vivo e o masculino se oferece como divindade ardente, fundindo corpo e alma na mesma chama.",
+      "author": "Toneza Cascaes",
+      "year": "2025",
+      "pages": "173",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "Saiba mais",
       "servicesButton": "A_Definir"
     },
     "card5": {
       "title": "A escada esquecida",
-      "subtitle": "",
-      "description": "<strong>O Livro que a Maçonaria precisa, mas ainda teme ler.</Strong/> Esta obra não se ergue contra a Maçonaria; ergue-se em favor dela, como guardiã que vela pelo templo sagrado que lhe foi confiado. Escrita por quem a carrega desde o berço, é expressão para que a Luz da Ordem permaneça acesa e incorruptível, a guiar corações e consciências.",
+      "subtitle": "O Livro que a Maçonaria precisa, mas ainda teme ler.",
+      "description": "Esta obra não se ergue contra a Maçonaria; ergue-se em favor dela, como guardiã que vela pelo templo sagrado que lhe foi confiado. Escrita por quem a carrega desde o berço, é expressão para que a Luz da Ordem permaneça acesa e incorruptível, a guiar corações e consciências.",
+      "author": "Toneza Cascaes",
+      "year": "2025",
+      "pages": "46",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "Saiba mais"
     },
@@ -69,6 +84,8 @@
       "title": "A_Definir",
       "subtitle": "A_Definir",
       "description": "A_Definir",
+      "author": "Toneza Cascaes",
+      "year": "2015",
       "buttonLabelModal": "Prévia exclusiva",
       "buttonLabel": "A_Definir"
     }
