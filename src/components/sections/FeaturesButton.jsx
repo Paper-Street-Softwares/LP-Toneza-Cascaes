@@ -9,7 +9,7 @@ import ServiceDetailCard from "../cards/ServiceDetailCard";
 import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import FeatureImgOnBgCardButton from "../cards/FeatureImgOnBgCardButton";
-import bgClaro from "../../assets/imgs/hero/backgroundLight.webp";
+import bgClaro from "../../assets/imgs/cta/backgroundLight.webp";
 
 export default function FeaturesButton({ colorMode }) {
   const { t } = useTranslation();
@@ -42,13 +42,11 @@ export default function FeaturesButton({ colorMode }) {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          minHeight: "100vh",
-          width: "100%",
         }}
       >
         <SectionArea id="service" className="">
           <SectionHeader
-            className={`text-center ${textClass}`}
+            className={`text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px] ${textClass}`}
             miniTitle={t("features.miniTag", { defaultValue: "Recursos" })}
             sectionHeaderTitle={t("features.title", {
               defaultValue: "Nossos Livros",
@@ -58,6 +56,8 @@ export default function FeaturesButton({ colorMode }) {
             })}
             titleColorSet={textClass}
             subtitleColorSet={textClass}
+            miniTitleBgColor="bg-minititle"
+            miniTitleTextColor="text-minititleLightLabel"
           />
 
           <SectionWrapper>

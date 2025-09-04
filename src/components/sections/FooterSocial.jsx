@@ -40,7 +40,7 @@ export default function FooterSocial({ colorMode, addres, obs, mode }) {
     <footer
       className={`full gap-y-[42px] font-secondFont text-left text-paragraph4 flex flex-col justify-between items-center ${footerBackground} ${textColor}`}
     >
-      <SectionArea paddingtop={true} paddingbot={false} className="pb-[23px]">
+      <SectionArea paddingtop={false} paddingbot={false} className="pb-[23px]">
         <SectionWrapper className="gap-[42px]">
           <div className="w-full max-w-[1215px] flex flex-col gap-y-[80px] desktop1:flex-row desktop1:justify-between">
             {/* Coluna 1 */}

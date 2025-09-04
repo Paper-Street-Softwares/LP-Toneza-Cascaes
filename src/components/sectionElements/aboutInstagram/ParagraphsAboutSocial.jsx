@@ -9,7 +9,7 @@ function ParagraphsAboutSocial() {
 
   return (
     <MotionDivDownToUp>
-      <Paragraphs className="text-white text-opacity-80 mb-[48px]">
+      <Paragraphs className="text-white text-opacity-80 ">
         <span
           dangerouslySetInnerHTML={{
             __html: t("about.aboutSocial.description"),

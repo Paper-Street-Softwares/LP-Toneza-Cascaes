@@ -51,7 +51,7 @@ export default function About({
 
         <div className="desktop1:w-[550px] desktop2:w-[570px]">
           <SectionHeader
-            className="text-center"
+            className="text-center "
             miniTitle={aboutText.miniTag}
             sectionHeaderTitle={aboutText.title}
             sectionHeaderSubtitle={aboutText.subtitle}

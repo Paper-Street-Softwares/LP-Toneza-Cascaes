@@ -11,7 +11,7 @@ export default function AboutParalaxeLP() {
 
   return (
     <div
-      className="relative bg-scroll bg-center bg-cover desktop1:bg-fixed"
+      className="relative bg-scroll bg-center bg-cover "
       style={{
         backgroundImage: `url(${contentLp01.cta.bgImg})`,
         backgroundRepeat: "no-repeat",

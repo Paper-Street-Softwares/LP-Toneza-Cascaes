@@ -8,7 +8,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { Dialog } from "primereact/dialog";
-import bgClaro from "../../assets/imgs/hero/backgroundLight.webp";
+import bgClaro from "../../assets/imgs/cta/backgroundLight.webp";
 
 export default function Cta({ colorMode = "default" }) {
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ export default function Cta({ colorMode = "default" }) {
         }}
       >
         <SectionArea className={`${bgClass}`} paddingbot={true} id="cta">
-          <SectionWrapper>
+          <SectionWrapper className="">
             <SectionHeader
               colorMode="dark"
               className={`text-center ${textClass}`}
@@ -90,44 +90,6 @@ export default function Cta({ colorMode = "default" }) {
           </SectionWrapper>
         </SectionArea>
       </div>
-
-      {/* Modal */}
-      <Dialog
-        className="font-secondFont"
-        closeIcon={<X size={20} />}
-        header={
-          <span dangerouslySetInnerHTML={{ __html: t("ctaSecondary.title") }} />
-        }
-        visible={visible}
-        onHide={() => setVisible(false)}
-        style={{ width: "50vw" }}
-        breakpoints={{ "4000px": "60vw", "1024px": "70vw", "641px": "90vw" }}
-      >
-        <div className="text-paragraph3">
-          <p
-            className="mb-4"
-            dangerouslySetInnerHTML={{
-              __html: t("ctaSecondary.subtitleDireitaPartes"),
-            }}
-          />
-
-          <ul className="space-y-4">
-            {livros.map((livro, i) => (
-              <li key={i}>
-                <a
-                  href={livro.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition"
-                >
-                  <span>{livro.titulo}</span>
-                  <MoveRight size={18} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Dialog>
     </>
   );
 }
