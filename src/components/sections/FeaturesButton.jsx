@@ -39,8 +39,10 @@ export default function FeaturesButton({ colorMode }) {
       <div
         style={{
           backgroundImage: `url(${bgClaro})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
-        className="relative bg-scroll bg-center bg-contain desktop1:bg-fixed "
       >
         <SectionArea id="service" className="">
           <SectionHeader

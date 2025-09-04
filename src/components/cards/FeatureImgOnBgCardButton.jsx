@@ -33,7 +33,7 @@ export default function FeatureImgOnBgCardButton(props) {
   const Wrapper = animation ? MotionDivDownToUp : "div";
 
   return (
-    <Wrapper className="w-full flex flex-col max-w-[340px] rounded-xl border border-gray-200 bg-white font-mainFont shadow-lg shadow-black">
+    <Wrapper className="w-full flex flex-col max-w-[340px] rounded-xl border border-gray-200 bg-white font-mainFont shadow-lg shadow-black/50">
       {/* Imagem */}
       <div className="w-full desktop1:h-[380px] flex justify-center items-center ">
         <img
