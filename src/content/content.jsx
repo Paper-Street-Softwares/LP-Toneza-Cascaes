@@ -56,7 +56,7 @@ export const infos = {
   name: "Toneza Cascaes Netto",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "tonezacascaesbooks.com", // Sem "www"
   phone: {
     ddd: "A_Definir",
     firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
