@@ -11,6 +11,7 @@
       "home": "Início",
       "service": "Serviços",
       "about": "Sobre Nós",
+      "blog": "Blog",
       "faq": "Perguntas Frequentes"
     },
     "ctaButtonText": "Contato",
@@ -155,11 +156,11 @@
     }
   },
   "blog": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "BLOG",
+    "title": "Inspiração e leitura ao seu alcance",
+    "subtitle": "Acompanhe artigos e reflexões sobre o poder das histórias, da escrita e da literatura.",
     "labelCards": "A_Definir",
-    "label": "A_Definir",
+    "label": "Clique aqui para ver todas as matérias",
     "blogLink": "A_Definir"
   },
   "faq": {
