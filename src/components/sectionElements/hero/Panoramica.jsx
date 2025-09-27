@@ -195,7 +195,7 @@ export default function Panoramica({ appDownloadButtons }) {
                         </div>
                       </MotionDivDownToUp>
                       <MotionDivDownToUp>
-                        <div className="flex justify-center text-white w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
+                        <div className="flex justify-center text-white w-full text-justify desktop1:text-justify desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
                           <p className="my-[32px]">{t("hero.subtitle")}</p>
                         </div>
                       </MotionDivDownToUp>
@@ -231,7 +231,7 @@ export default function Panoramica({ appDownloadButtons }) {
                           <div className="flex justify-center desktop1:justify-start">
                             <div className="flex flex-col items-center desktop1:flex-row text-primary">
                               <span> {content.texts.hero.obsHero.icon}</span>
-                              <p className="text-lighter text-start ml-[10px] mt-[12px] desktop1:mt-0">
+                              <p className="text-lighter text-justify ml-[10px] mt-[12px] desktop1:mt-0">
                                 {t("hero.obsHero.text")}{" "}
                               </p>
                             </div>
@@ -240,7 +240,7 @@ export default function Panoramica({ appDownloadButtons }) {
                         {appDownloadButtons && (
                           <MotionDivDownToUp>
                             <div className="flex flex-col items-center desktop1:items-start">
-                              <p className="mb-[20px] mt-[60px] text-white  text-center">
+                              <p className="mb-[20px] mt-[60px] text-white  text-justify">
                                 {content.texts.hero.app.description}
                               </p>
                               <div className="">

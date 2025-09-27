@@ -17,7 +17,7 @@ export default function AboutFading({ colorMode = "default" }) {
   const fadeClass = fadeClasses[colorMode] || fadeClasses.default;
 
   return (
-    <div className={`relative font-secondFont text-paragraph4 ${textClass}`}>
+    <div className={`relative font-secondFont text-paragraph4 text-justify ${textClass}`}>
       {/* Renderiza HTML/JSX do JSON */}
       <Trans i18nKey="about.paragraph" />
 

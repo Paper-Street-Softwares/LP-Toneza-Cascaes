@@ -14,7 +14,7 @@ export default function AboutModal() {
     setModalTitle(t("about.title"));
 
     setModalContent(
-      <div className="text-paragraph3">
+      <div className="text-paragraph3 text-justify">
         <p className="mb-[20px]">
           <Trans i18nKey="about.subtitle" />
         </p>

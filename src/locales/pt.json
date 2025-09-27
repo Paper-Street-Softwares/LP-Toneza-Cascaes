@@ -11,6 +11,7 @@
       "home": "Início",
       "service": "Serviços",
       "about": "Sobre Nós",
+      "blog": "Blog",
       "faq": "Perguntas Frequentes"
     },
     "ctaButtonText": "Contato",
@@ -101,7 +102,7 @@
       "alt": "imagem about"
     },
     "miniTag": "O ESCRITOR",
-    "title": "Dr. Toneza Cascaes Netto",
+    "title": "Dr. Toneza Cascaes",
     "subtitle": "A voz que transcende tribunais, livros e ideias, conduzindo à verdadeira dignidade.",
     "buttonModalLabelAbout": "Continuar lendo",
     "paragraph": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana. ",
@@ -155,11 +156,11 @@
     }
   },
   "blog": {
-    "miniTag": "A_Definir",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
+    "miniTag": "BLOG",
+    "title": "Inspiração e leitura ao seu alcance",
+    "subtitle": "Acompanhe artigos e reflexões sobre o poder das histórias, da escrita e da literatura.",
     "labelCards": "A_Definir",
-    "label": "A_Definir",
+    "label": "Clique aqui para ver todas as matérias",
     "blogLink": "A_Definir"
   },
   "faq": {
@@ -171,15 +172,12 @@
         "question": "É possível adquirir os livros em formato digital?",
         "answer": "Sim. Além das edições tradicionais, oferecemos experiências digitais como o Flipbook, que permitem ao leitor folhear a obra como se tivesse um exemplar físico em mãos."
       },
+
       "question2": {
-        "question": "Onde posso encontrar as publicações?",
-        "answer": "As obras estão disponíveis diretamente pela Editora e, progressivamente, em diversas plataformas e idiomas, ampliando o alcance da mensagem ao público internacional."
-      },
-      "question3": {
         "question": "Os livros da Editora têm tradução para outros idiomas?",
         "answer": "Sim. Diversas obras já estão sendo traduzidas e publicadas em diferentes idiomas, tornando o pensamento e a mensagem acessíveis a leitores ao redor do mundo."
       },
-      "question4": {
+      "question3": {
         "question": "Qual é o diferencial da Editora em relação a outras casas editoriais?",
         "answer": "Nosso propósito vai além da publicação: cada obra é concebida como um ato jurídico e espiritual, destinada a despertar consciência, preservar a dignidade e oferecer horizontes de transformação interior."
       }

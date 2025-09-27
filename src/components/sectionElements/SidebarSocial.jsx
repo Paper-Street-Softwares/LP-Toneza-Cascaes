@@ -9,6 +9,7 @@ import {
   ServerIcon,
   HelpCircle,
   AlignJustify,
+  FileText,
   MapPin,
 } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
@@ -44,8 +45,9 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
     <HomeIcon />,
     <UserSearch />,
     <ServerIcon />,
+    <FileText />,
     <HelpCircle />,
-    <MapPin />,
+    // <MapPin />,
   ];
 
   return (
@@ -95,9 +97,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
                       onClick={(e) => hide(e)}
                       rounded
                       outlined
-                      className={`${
-                        colorMode ? "text-white" : "text-white"
-                      }`}
+                      className={`${colorMode ? "text-white" : "text-white"}`}
                     >
                       <X size={32} />
                     </Button>

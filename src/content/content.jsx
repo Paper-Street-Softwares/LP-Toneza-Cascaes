@@ -4,6 +4,7 @@ import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.webp";
+import selo from "../assets/imgs/cta/selo.webp";
 
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
@@ -56,7 +57,7 @@ export const infos = {
   name: "Toneza Cascaes Netto",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "tonezacascaesbooks.com", // Sem "www"
   phone: {
     ddd: "A_Definir",
     firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
@@ -494,11 +495,10 @@ const content = {
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
+      seloCta: selo,
       miniTag: "FALE CONOSCO",
-      title:
-        "Enfrentando um problema jurídico? Deixe que cuidamos disso para você!",
-      subtitle:
-        "Converse com nossa equipe. Estamos prontos para oferecer a orientação jurídica de que você precisa.",
+      title: "",
+      subtitle: "",
       ctaButtonText: "Entre em contato pelo WhatsApp",
     },
     // ctaSecondary: {
@@ -558,8 +558,8 @@ const content = {
       subtitle: "",
       img: imgSteps,
       labelCards: "Ver mais",
-      label: "Clique aqui para ver todas as matérias",
-      blogLink: "A_Definir", //sem "https://"
+      label: "",
+      blogLink: "tonezacascaesbooks.wordpress.com", //sem "https://"
     },
     faq: {
       miniTag: "TIRE SUAS DÚVIDAS",
