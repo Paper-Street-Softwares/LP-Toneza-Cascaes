@@ -4,6 +4,7 @@ import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.webp";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.webp";
+import selo from "../assets/imgs/cta/selo.webp";
 
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
@@ -494,11 +495,10 @@ const content = {
     },
     cta: {
       backgroundImg: ctaWhatsappImgBg,
+      seloCta: selo,
       miniTag: "FALE CONOSCO",
-      title:
-        "Enfrentando um problema jurídico? Deixe que cuidamos disso para você!",
-      subtitle:
-        "Converse com nossa equipe. Estamos prontos para oferecer a orientação jurídica de que você precisa.",
+      title: "",
+      subtitle: "",
       ctaButtonText: "Entre em contato pelo WhatsApp",
     },
     // ctaSecondary: {

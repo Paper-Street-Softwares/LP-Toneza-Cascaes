@@ -76,17 +76,26 @@ export default function Cta({ colorMode = "default" }) {
                   }}
                 />
               }
-              sectionHeaderSubtitle={
+              titleColorSet={textClass}
+              subtitleColorSet={textClass}
+              type=""
+            />
+            <div className="relative flex w-full justify-center text-center pb-[64px] desktop1:pb-0">
+              <h3 className="font-mainFont text-title1 w-[90%] tablet1:w-[60%] desktop1:w-[570px]">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: t("ctaSecondary.subtitleDireitaPartes"),
                   }}
                 />
-              }
-              titleColorSet={textClass}
-              subtitleColorSet={textClass}
-              type=""
-            />
+              </h3>
+
+              <img
+                src={content.texts.cta.seloCta}
+                alt="Selo da Livraria"
+                className="absolute w-20 bottom-[-15%] left-1/2 transform -translate-x-1/2 phone2:bottom-[-20%] tablet1:bottom-[-20%] desktop1:bottom-[-65%] desktop1:left-[62%] desktop1:translate-x-0
+             desktop2:bottom-[-65%] desktop2:left-[59%] "
+              />
+            </div>
           </SectionWrapper>
         </SectionArea>
       </div>
