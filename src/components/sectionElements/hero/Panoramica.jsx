@@ -71,7 +71,13 @@ export default function Panoramica({ appDownloadButtons }) {
                         onClick={() => {
                           const ctaSection = document.getElementById("cta");
                           if (ctaSection) {
-                            ctaSection.scrollIntoView({ behavior: "smooth" });
+                            const yOffset = -90; // ajuste aqui: valor negativo sobe mais
+                            const y =
+                              ctaSection.getBoundingClientRect().top +
+                              window.pageYOffset +
+                              yOffset;
+
+                            window.scrollTo({ top: y, behavior: "smooth" });
                           }
                         }}
                         icon={
@@ -209,9 +215,13 @@ export default function Panoramica({ appDownloadButtons }) {
                             onClick={() => {
                               const ctaSection = document.getElementById("cta");
                               if (ctaSection) {
-                                ctaSection.scrollIntoView({
-                                  behavior: "smooth",
-                                });
+                                const yOffset = -90; // ajuste aqui: valor negativo sobe mais
+                                const y =
+                                  ctaSection.getBoundingClientRect().top +
+                                  window.pageYOffset +
+                                  yOffset;
+
+                                window.scrollTo({ top: y, behavior: "smooth" });
                               }
                             }}
                             icon={

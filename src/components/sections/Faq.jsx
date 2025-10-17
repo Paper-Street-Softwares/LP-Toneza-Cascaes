@@ -61,6 +61,18 @@ export default function Faq({ colorMode }) {
                 label={t("faq.paragraph")}
                 colorMode={colorMode}
                 labelColor="text-primary"
+                onClick={() => {
+                  const ctaSection = document.getElementById("cta");
+                  if (ctaSection) {
+                    const yOffset = -90; // ajuste aqui: valor negativo sobe mais
+                    const y =
+                      ctaSection.getBoundingClientRect().top +
+                      window.pageYOffset +
+                      yOffset;
+
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
               />
             </Paragraphs>
           </MotionDivDownToUp>
