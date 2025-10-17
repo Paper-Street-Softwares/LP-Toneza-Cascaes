@@ -125,9 +125,9 @@ export default function NavbarSocial({ colorMode, mode }) {
 
           <div className="flex items-center justify-between gap-[16px]">
             <div className="hidden tablet1:flex desktop1:hidden">
-              <Button
-                aria-label={t("hero.ctaButtonAriaLabel")} // traduzido
-                label={t("navbar.ctaButtonTextResponsive")} // traduzido
+              {/* <Button
+                aria-label={t("hero.ctaButtonAriaLabel")}
+                label={t("navbar.ctaButtonTextResponsive")}
                 size="small"
                 icon={
                   <svg
@@ -141,7 +141,7 @@ export default function NavbarSocial({ colorMode, mode }) {
                   </svg>
                 }
                 colorMode={colorMode}
-              />
+              /> */}
             </div>
             <div className="flex items-center desktop1:hidden">
               <SidebarSocial colorMode={colorMode} mode={mode} />
