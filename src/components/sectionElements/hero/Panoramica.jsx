@@ -69,7 +69,7 @@ export default function Panoramica({ appDownloadButtons }) {
                         animation
                         className="w-[100%]"
                         onClick={() => {
-                          const ctaSection = document.getElementById("cta");
+                          const ctaSection = document.getElementById("service");
                           if (ctaSection) {
                             const yOffset = -90; // ajuste aqui: valor negativo sobe mais
                             const y =
@@ -213,7 +213,7 @@ export default function Panoramica({ appDownloadButtons }) {
                             animation
                             className="w-[100%]"
                             onClick={() => {
-                              const ctaSection = document.getElementById("cta");
+                              const ctaSection = document.getElementById("service");
                               if (ctaSection) {
                                 const yOffset = -90; // ajuste aqui: valor negativo sobe mais
                                 const y =
