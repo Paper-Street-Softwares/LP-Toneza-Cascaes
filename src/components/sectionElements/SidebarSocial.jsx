@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { Sidebar } from "primereact/sidebar";
-import { Button } from "primereact/button";
-import { Ripple } from "primereact/ripple";
+import { useState, useEffect } from 'react'
+import { Sidebar } from 'primereact/sidebar'
+import { Button } from 'primereact/button'
+import { Ripple } from 'primereact/ripple'
 import {
   X,
   HomeIcon,
@@ -11,50 +11,50 @@ import {
   AlignJustify,
   FileText,
   MapPin,
-} from "lucide-react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import content from "../../content/content";
+} from 'lucide-react'
+import { Link as ScrollLink } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import content from '../../content/content'
 
-export default function SidebarSocial({ colorMode, mode = "blog" }) {
-  const { t } = useTranslation();
-  const [visible, setVisible] = useState(false);
-  const [visibleSections, setVisibleSections] = useState([]);
-  const [scrolled, setScrolled] = useState(false);
+export default function SidebarSocial({ colorMode, mode = 'blog' }) {
+  const { t } = useTranslation()
+  const [visible, setVisible] = useState(false)
+  const [visibleSections, setVisibleSections] = useState([])
+  const [scrolled, setScrolled] = useState(false)
 
-  const toggleSidebar = () => setVisible(!visible);
+  const toggleSidebar = () => setVisible(!visible)
 
   useEffect(() => {
-    const menuItemsObj = t("navbar.menuItems", { returnObjects: true }) || {};
-    const allIds = Object.keys(menuItemsObj);
+    const menuItemsObj = t('navbar.menuItems', { returnObjects: true }) || {}
+    const allIds = Object.keys(menuItemsObj)
     const paired = allIds.map((id) => ({
       id,
       label: menuItemsObj[id], // label já traduzido via t()
-    }));
+    }))
 
-    if (mode === "site") {
-      setVisibleSections(paired);
+    if (mode === 'site') {
+      setVisibleSections(paired)
     } else {
-      const existing = paired.filter(({ id }) => !!document.getElementById(id));
-      setVisibleSections(existing);
+      const existing = paired.filter(({ id }) => !!document.getElementById(id))
+      setVisibleSections(existing)
     }
-  }, [mode, t]);
+  }, [mode, t])
 
   const icons = [
     <HomeIcon />,
     <UserSearch />,
     <ServerIcon />,
-    <FileText />,
+    // <FileText />,
     <HelpCircle />,
     // <MapPin />,
-  ];
+  ]
 
   return (
     <div className="inset-0 z-10 flex">
       <div
         className={`${
-          visible ? "block" : "hidden"
+          visible ? 'block' : 'hidden'
         } fixed inset-0 bg-darker opacity-50 lg:hidden`}
         onClick={toggleSidebar}
       />
@@ -62,7 +62,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
       <div className="flex justify-center card">
         <AlignJustify
           className={`p-button-rounded p-button-outlined lg:hidden ${
-            colorMode ? "text-primary" : "text-white"
+            colorMode ? 'text-primary' : 'text-white'
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />
@@ -76,10 +76,10 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
               id="app-sidebar-2"
               className={`${
                 colorMode
-                  ? "bg-bgSectionDark"
-                  : "absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700"
+                  ? 'bg-bgSectionDark'
+                  : 'absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700'
               }`}
-              style={{ width: "280px" }}
+              style={{ width: '280px' }}
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-6">
@@ -97,7 +97,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
                       onClick={(e) => hide(e)}
                       rounded
                       outlined
-                      className={`${colorMode ? "text-white" : "text-white"}`}
+                      className={`${colorMode ? 'text-white' : 'text-white'}`}
                     >
                       <X size={32} />
                     </Button>
@@ -116,11 +116,11 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
                             <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                               {icons[index] || <HelpCircle />}
                               <span className="ml-[8px]">
-                                {mode === "site" ? (
+                                {mode === 'site' ? (
                                   <RouterLink
                                     to={
-                                      id === "inicio"
-                                        ? "/"
+                                      id === 'inicio'
+                                        ? '/'
                                         : `/${id.toLowerCase()}`
                                     }
                                     className="align-text-top cursor-pointer"
@@ -154,5 +154,5 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
         />
       </div>
     </div>
-  );
+  )
 }
