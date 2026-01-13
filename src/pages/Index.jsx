@@ -1,34 +1,34 @@
-import Faq from "../components/sections/Faq";
-import Hero from "../components/sections/Hero";
-import About from "../components/sections/About";
-import Steps from "../components/sections/Steps";
-import Features from "../components/sections/Features";
-import Navbar from "../components/sections/NavbarSocial";
-import FooterSocial from "../components/sections/FooterSocial";
-import AboutInstagram from "../components/sections/AboutInstagram";
-import BackToTopButton from "../components/interactives/BackToTopButton";
-import FloatingWhatsappButton from "../components/interactives/FloatingWhatsappButton";
-import Maps from "../components/sections/Maps";
-import BlogPosts from "../components/sections/BlogPosts";
-import CtaSecondary from "../components/sections/CtaSecondary";
-import { useTranslation } from "react-i18next";
-import "./../i18n";
-import Button from "../components/interactives/Button";
-import UnderConstruction from "../components/interactives/UnderConstruction";
+import Faq from '../components/sections/Faq'
+import Hero from '../components/sections/Hero'
+import About from '../components/sections/About'
+import Steps from '../components/sections/Steps'
+import Features from '../components/sections/Features'
+import Navbar from '../components/sections/NavbarSocial'
+import FooterSocial from '../components/sections/FooterSocial'
+import AboutInstagram from '../components/sections/AboutInstagram'
+import BackToTopButton from '../components/interactives/BackToTopButton'
+import FloatingWhatsappButton from '../components/interactives/FloatingWhatsappButton'
+import Maps from '../components/sections/Maps'
+import BlogPosts from '../components/sections/BlogPosts'
+import CtaSecondary from '../components/sections/CtaSecondary'
+import { useTranslation } from 'react-i18next'
+import './../i18n'
+import Button from '../components/interactives/Button'
+import UnderConstruction from '../components/interactives/UnderConstruction'
 
 export default function Index() {
-  const showUnderConstruction = false;
+  const showUnderConstruction = false
 
   // Altere esta constante para: 'default', 'light' ou 'dark'
-  const colorMode = "default";
-  const { t, i18n } = useTranslation();
+  const colorMode = 'default'
+  const { t, i18n } = useTranslation()
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   if (showUnderConstruction) {
-    return <UnderConstruction />;
+    return <UnderConstruction />
   }
 
   return (
@@ -78,12 +78,12 @@ export default function Index() {
       <AboutInstagram colorMode={colorMode} socialPrint={true} />
 
       {/* <Steps colorMode={colorMode} /> */}
-      <BlogPosts />
+      {/* <BlogPosts /> */}
       <Faq colorMode={colorMode} />
       {/* <Maps colorMode={colorMode} /> */}
       <FooterSocial colorMode={colorMode} addres={true} obs={false} />
       {/* <FloatingWhatsappButton />
       <BackToTopButton /> */}
     </>
-  );
+  )
 }
