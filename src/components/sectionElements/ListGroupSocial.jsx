@@ -1,71 +1,68 @@
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Button from "../interactives/Button";
-import { useTranslation } from "react-i18next";
+import { Link as ScrollLink } from 'react-scroll'
+import { Link as RouterLink, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import Button from '../interactives/Button'
+import { useTranslation } from 'react-i18next'
 
 export default function ListGroupSocial({
-  colorMode = "default",
-  mode = "blog",
+  colorMode = 'default',
+  mode = 'blog',
 }) {
-  const { t } = useTranslation();
-  const [visibleSections, setVisibleSections] = useState([]);
-  const location = useLocation();
+  const { t } = useTranslation()
+  const [visibleSections, setVisibleSections] = useState([])
+  const location = useLocation()
 
   useEffect(() => {
     // IDs do menu (mesma ordem do pt.json)
-    const allIds = ["home", "service", "about", "blog", "faq", "maps"];
+    const allIds = ['home', 'service', 'about', 'blog', 'faq', 'maps']
 
     // Pega labels direto do pt.json via i18next
-    const allLabels = t("navbar.menuItems", { returnObjects: true });
+    const allLabels = t('navbar.menuItems', { returnObjects: true })
 
     // Cria array com id + label
     const paired = allIds.map((id) => ({
       id,
       label: allLabels[id] || id, // fallback para id se não achar
-    }));
+    }))
 
-    if (mode === "site") {
-      setVisibleSections(paired);
+    if (mode === 'site') {
+      setVisibleSections(paired)
     } else {
-      const filtered = paired.filter(({ id }) => !!document.getElementById(id));
-      setVisibleSections(filtered);
+      const filtered = paired.filter(({ id }) => !!document.getElementById(id))
+      setVisibleSections(filtered)
     }
-  }, [mode, t]);
+  }, [mode, t])
 
   const getTextColor = () => {
-    if (colorMode === "light") return "text-black";
-    if (colorMode === "dark") return "text-white";
-    return "text-white";
-  };
+    if (colorMode === 'light') return 'text-black'
+    if (colorMode === 'dark') return 'text-white'
+    return 'text-white'
+  }
 
   const getHoverTextColor = () => {
-    if (colorMode === "light") return "hover:text-black";
-    if (colorMode === "dark") return "hover:text-white";
-    return "hover:text-white";
-  };
+    if (colorMode === 'light') return 'hover:text-black'
+    if (colorMode === 'dark') return 'hover:text-white'
+    return 'hover:text-white'
+  }
 
   const getBorderColor = () => {
-    if (colorMode === "light") return "bg-black";
-    if (colorMode === "dark") return "bg-white";
-    return "bg-white";
-  };
+    if (colorMode === 'light') return 'bg-black'
+    if (colorMode === 'dark') return 'bg-white'
+    return 'bg-white'
+  }
 
   const textShadow =
-    colorMode === "dark" || colorMode === "default"
-      ? "[text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
-      : "";
+    colorMode === 'dark' || colorMode === 'default'
+      ? '[text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
+      : ''
 
   return (
     <ul
       className={`h-14 hidden desktop1:flex my-auto items-center justify-end tablet1:items-center desktop1:gap-8 desktop2:gap-8 w-auto font-normal text-paragraph3 font-secondFont ${getTextColor()}`}
     >
       {visibleSections.map(({ id, label }) => (
-        <li
-          key={id}
-          className="transition group h-[24px] desktop1:w-[50%] desktop2:w-auto text-center"
-        >
-          {mode === "blog" ? (
+        <li key={id} className="transition group h-[24px] w-auto text-center">
+          {mode === 'blog' ? (
             <ScrollLink
               to={id}
               className="relative font-semibold cursor-pointer"
@@ -85,7 +82,7 @@ export default function ListGroupSocial({
             </ScrollLink>
           ) : (
             <RouterLink
-              to={id === "inicio" ? "/" : `/${id.toLowerCase()}`}
+              to={id === 'inicio' ? '/' : `/${id.toLowerCase()}`}
               className="relative font-semibold cursor-pointer"
             >
               <span
@@ -126,5 +123,5 @@ export default function ListGroupSocial({
         </div>
       </li>
     </ul>
-  );
+  )
 }
