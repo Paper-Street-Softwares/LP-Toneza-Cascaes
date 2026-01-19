@@ -18,12 +18,12 @@
     "ctaButtonTextResponsive": "Contato"
   },
   "hero": {
-    "miniTag": "",
-    "title": "Descubra a palavra que <span class=\"text-primary font-bold\">transforma</span>",
-    "subtitle": "Obras que elevam a consciência e inspiram a reflexão profunda em cada leitor.",
-    "ctaButtonText": "Explorar coleção",
+    "miniTag": "EDITORA ALÉTHEIA",
+    "title": "Onde a palavra encontra a <span class=\"text-primary font-bold\">verdade</span>",
+    "subtitle": "Publicamos livros com rigor intelectual, ética editorial e compromisso com o que permanece.",
+    "ctaButtonText": "Conheça nossa postura editorial",
     "obsHero": {
-      "text": "Cada obra é um convite à reflexão profunda e ao despertar da consciência."
+      "text": "Publicar não é produzir volume. É cuidar do sentido, do leitor e do tempo."
     }
   },
   "features": {
@@ -101,20 +101,21 @@
     "imagem": {
       "alt": "imagem about"
     },
-    "miniTag": "O ESCRITOR",
-    "title": "Dr. Toneza Cascaes",
-    "subtitle": "A voz que transcende tribunais, livros e ideias, conduzindo à verdadeira dignidade.",
+    "miniTag": "Nossa Postura Editorial",
+    "title": "Publicar é um ato de responsabilidade",
+    "subtitle": "Cada livro nasce do cuidado com a linguagem, o pensamento e o tempo.",
     "buttonModalLabelAbout": "Continuar lendo",
-    "paragraph": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana. ",
-    "modal": "Há mais de três décadas, Dr. Toneza Cascaes dedica sua vida ao Direito como expressão de um chamado interior. Jurista de sólida formação, participou da criação de projetos de lei que hoje orientam a sociedade e inspiram maior proteção à dignidade humana.  <br/><br/> No exercício da advocacia, sua palavra tem servido em pareceres de elevada relevância e em sustentações orais que ecoam nos tribunais como testemunhos em favor da justiça viva. Sua experiência se expande ainda na condição de auditor e consultor jurídico, orientando empresas que necessitam de direção ética em sua gestão legal, conduzindo com precisão a coordenação e a contratação de profissionais que atuam sob sua supervisão direta. <br/><br/> Essa trajetória jurídica encontra ressonância em outras dimensões de sua vida intelectual e espiritual.  <br/><br/> Como sociólogo, observa os movimentos sociais com sensibilidade atenta; como filósofo, busca os fundamentos que sustentam a existência; como radiestesista por natureza, percebe a energia sutil que anima a vida. O conjunto dessas perspectivas confere amplitude e densidade a cada palavra escrita e a cada ato profissional.  <br/><br/> Dessa síntese nasceu sua obra literária, formada por dezenas e dezenas de livros que, aos poucos, se tornam acessíveis em diversos idiomas, despertando consciência e oferecendo horizontes de transformação interior. ",
+    "paragraph": "A Editora ALÉTHEIA não publica por volume, tendência ou ruído de mercado. Publica por sentido. <br/><br/>Tratamos cada obra como uma unidade viva de pensamento e forma, acompanhando todo o processo editorial — da preparação do texto à distribuição — com rigor intelectual, ética e respeito absoluto ao autor e ao leitor. <br/><br/> Selecionamos livros que merecem permanecer. Obras que dialogam com a filosofia, o direito, a espiritualidade, a literatura e o pensamento humanista, sem concessões a modismos ou fórmulas vazias.<br/><br/> Mais do que editar livros, afirmamos uma postura: cuidar da palavra é cuidar da consciência.",
+    "modal": "",
     "ctaText": "Quer saber mais sobre nós? Clique abaixo 👇",
     "ctaButtonAriaLabel": "",
     "ctaButtonText": "Entre em contato",
     "aboutSocial": {
       "miniTag": "A EDITORA",
-      "title": "Organizações Toneza Cascaes Editora & Cultura",
-      "subtitle": "",
-      "description": "Desse mesmo impulso surgiu a Organizações Toneza Cascaes Editora & Cultura. Inicialmente criada para abrigar sua produção autoral, tornou-se espaço de acolhida para escritores que compartilham o propósito de elevar a consciência humana.  <br/><br/> A editora não se limita a publicar livros, mas se dedica a semear ideias que preservam valores essenciais e reacendem no leitor a lembrança de sua própria dignidade. Cada publicação é concebida como ato jurídico e espiritual, uma peça de cultura que defende a humanidade, honra a consciência e abre caminhos de liberdade interior. <br/><br/> A proposta editorial segue esse espírito: unir rigor intelectual e profundidade ética, tradição e inovação, filosofia e espiritualidade, palavra e silêncio. Por isso, ao lado das edições tradicionais, oferece também experiências digitais como o Flipbook, que devolvem ao leitor o prazer de folhear como quem toca uma obra viva. <br/><br/> A história de Toneza Cascaes e a história da Editora caminham juntas. Ambas nasceram do mesmo gesto de serviço e se realizam no mesmo destino: transformar conhecimento em cultura, escrita em consciência, verbo em semente de esperança.",
+      "title": "ALÉTHEIA EDITORA & CULTURA",
+      "subtitle": "Onde a palavra é cuidada, o pensamento é honrado e o sentido permanece.",
+      "paragraph": "A ALÉTHEIA EDITORA & CULTURA nasce de um compromisso silencioso e perseverante com a verdade que se revela pela palavra bem cuidada, pelo pensamento responsável e pela forma ética de publicar. Seu nome expressa uma vocação. ALÉTHEIA é o desvelamento do sentido, a fidelidade ao que merece permanecer, a recusa do ruído fácil e da pressa que empobrece o espírito.",
+      "description": "A ALÉTHEIA EDITORA & CULTURA nasce de um compromisso silencioso e perseverante com a verdade que se revela pela palavra bem cuidada, pelo pensamento responsável e pela forma ética de publicar. Seu nome expressa uma vocação. ALÉTHEIA é o desvelamento do sentido, a fidelidade ao que merece permanecer, a recusa do ruído fácil e da pressa que empobrece o espírito. <br/><br/> Concebida inicialmente para abrigar a produção autoral do Dr. Toneza Cascaes, a Editora amadureceu naturalmente como espaço de acolhida para escritores que compartilham um mesmo propósito: elevar a consciência humana por meio da cultura, da linguagem responsável e do pensamento que honra a dignidade do ser. <br/><br/> Constituída em ambiente integralmente digital, a ALÉTHEIA reúne profissionais sediados em diferentes regiões, unidos por critérios comuns de excelência intelectual, estética editorial e respeito absoluto ao autor, ao leitor e ao tempo da obra. Sua matriz institucional está em Florianópolis, Santa Catarina, ponto de convergência simbólica entre rigor, serenidade e abertura ao mundo.<br/><br/> A Editora dedica-se à publicação e à comercialização de obras próprias e de terceiros, em formatos físicos e digitais, atuando de forma integral em todo o processo editorial. Desenvolve projetos completos de livros, que abrangem a preparação e revisão do texto, a diagramação, a criação de livros digitais, a impressão e a distribuição. Cada obra é tratada como unidade viva de pensamento, forma e responsabilidade cultural.<br/><br/>A ALÉTHEIA não se limita a publicar livros. Dedica-se a semear ideias que preservam valores essenciais e reacendem no leitor a memória de sua própria dignidade. Cada publicação é concebida como um ato de cultura dotado também de dimensão jurídica e espiritual, comprometido com a defesa da humanidade, o respeito à consciência e a abertura de caminhos de liberdade interior. <br/><br/>Sua proposta editorial reflete esse espírito. Une rigor intelectual e profundidade ética, tradição e inovação, filosofia e espiritualidade, palavra e silêncio. Ao lado das edições tradicionais, oferece também experiências digitais como o Flipbook, que devolvem ao leitor o gesto simbólico de folhear, permitindo que o livro seja tocado como quem se aproxima de uma obra viva. <br/><br/> Mais do que oferecer serviços editoriais, a Editora ALÉTHEIA afirma uma postura. Publicar é um ato de cuidado com a linguagem, com o leitor e com o tempo. A Editora não se orienta pela quantidade, mas pela coerência. Não se move pelo ruído do mercado, mas pela permanência do conteúdo. Cada livro que acolhe carrega o compromisso com a dignidade intelectual, a clareza estética e a honestidade editorial.<br/><br/>A história do Dr. Toneza Cascaes e a história da Editora caminham juntas. Ambas nascem de um mesmo gesto de serviço e se realizam em um mesmo destino: transformar conhecimento em cultura, escrita em consciência e o verbo em semente serena de esperança. ",
       "labelInstagram": "A_Definir",
       "labelFacebook": "A_Definir",
       "labelLinkedin": "A_Definir",
@@ -124,7 +125,7 @@
   "ctaSecondary": {
     "minitag": "Convite à Leitura",
     "title": "Onde você estiver, estamos juntos ",
-    "subtitleDireitaPartes": "Fundada na alma, presente no mundo. Sem paredes, sem fronteiras. A Editora Toneza Cascaes existe onde houver um leitor desperto.",
+    "subtitleDireitaPartes": "Fundada na alma, presente no mundo. Sem paredes, sem fronteiras. A ALÉTHEIA EDITORA & CULTURA existe onde houver um leitor desperto.",
     "titleDireita": "WhatsApp",
     "ctaButtonText": "Conheça a coleção"
   },

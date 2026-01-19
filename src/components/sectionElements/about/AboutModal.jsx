@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Dialog } from "primereact/dialog";
-import { X, MoveRight } from "lucide-react";
-import Button from "../../interactives/Button";
-import { useTranslation, Trans } from "react-i18next";
+import React, { useState } from 'react'
+import { Dialog } from 'primereact/dialog'
+import { X, MoveRight } from 'lucide-react'
+import Button from '../../interactives/Button'
+import { useTranslation, Trans } from 'react-i18next'
 
 export default function AboutModal() {
-  const { t } = useTranslation();
-  const [visible, setVisible] = useState(false);
-  const [modalContent, setModalContent] = useState("");
-  const [modalTitle, setModalTitle] = useState("");
+  const { t } = useTranslation()
+  const [visible, setVisible] = useState(false)
+  const [modalContent, setModalContent] = useState('')
+  const [modalTitle, setModalTitle] = useState('')
 
   const onClick = () => {
-    setModalTitle(t("about.title"));
+    setModalTitle(t('about.title'))
 
     setModalContent(
       <div className="text-paragraph3 text-justify">
@@ -41,17 +41,17 @@ export default function AboutModal() {
             }
           />
         </div> */}
-      </div>
-    );
+      </div>,
+    )
 
-    setVisible(true);
-  };
+    setVisible(true)
+  }
 
   return (
     <div>
       <Button
         className="mt-[48px] text-labelButtons"
-        label={t("about.buttonModalLabelAbout")}
+        label={t('about.buttonModalLabelAbout')}
         onClick={onClick}
         removeAnchor={true}
         removeTarget={true}
@@ -65,11 +65,11 @@ export default function AboutModal() {
         header={modalTitle}
         visible={visible}
         onHide={() => setVisible(false)}
-        style={{ width: "50vw" }}
-        breakpoints={{ "4000px": "60vw", "1024px": "70vw", "641px": "85vw" }}
+        style={{ width: '50vw' }}
+        breakpoints={{ '4000px': '60vw', '1024px': '70vw', '641px': '85vw' }}
       >
         {modalContent}
       </Dialog>
     </div>
-  );
+  )
 }

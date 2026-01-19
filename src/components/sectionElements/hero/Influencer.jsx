@@ -1,15 +1,15 @@
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import MotionDivRightToLeft from "../../animation/MotionDivRightToLeft";
-import content from "../../../content/content";
-import Button from "../../interactives/Button";
-import { useNavigate } from "react-router-dom";
-import SectionArea from "../SectionArea";
-import SectionWrapper from "../SectionWrapper";
-import { useTranslation } from "react-i18next";
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import MotionDivRightToLeft from '../../animation/MotionDivRightToLeft'
+import content from '../../../content/content'
+import Button from '../../interactives/Button'
+import { useNavigate } from 'react-router-dom'
+import SectionArea from '../SectionArea'
+import SectionWrapper from '../SectionWrapper'
+import { useTranslation } from 'react-i18next'
 
 export default function Influencer({ appDownloadButtons }) {
-  const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const navigate = useNavigate()
+  const { t, i18n } = useTranslation()
 
   return (
     <>
@@ -24,19 +24,19 @@ export default function Influencer({ appDownloadButtons }) {
             <div className="h-[140px] desktop1:h-[140px]" />
             <div className="flex flex-col-reverse gap-[10px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[0px] desktop1:pb-[0px]">
               <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]  ">
-                {/* <MotionDivDownToUp>
+                <MotionDivDownToUp>
                   <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
                     <p className="mb-[16px] bg-primary text-colorBlack bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
-                      {content.texts.hero.miniTag}
+                      {t('hero.miniTag')}
                     </p>
                   </div>
-                </MotionDivDownToUp> */}
+                </MotionDivDownToUp>
                 <MotionDivDownToUp>
                   <div className="text-lighter flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
                     <h1>
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: t("hero.title"),
+                          __html: t('hero.title'),
                         }}
                       />
                     </h1>
@@ -44,14 +44,14 @@ export default function Influencer({ appDownloadButtons }) {
                 </MotionDivDownToUp>
                 <MotionDivDownToUp>
                   <div className="flex justify-center text-white w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                    <p className="my-[32px]">{t("hero.subtitle")}</p>
+                    <p className="my-[32px]">{t('hero.subtitle')}</p>
                   </div>
                 </MotionDivDownToUp>
                 <div className="w-full phone2:w-full tablet2:w-auto">
                   <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
                     <Button
-                      aria-label={t("hero.ctaButtonAriaLabel")}
-                      label={t("hero.ctaButtonText")}
+                      aria-label={t('hero.ctaButtonAriaLabel')}
+                      label={t('hero.ctaButtonText')}
                       animation
                       className="w-[100%]"
                       icon={
@@ -72,7 +72,7 @@ export default function Influencer({ appDownloadButtons }) {
                       <div className="flex flex-col items-center desktop1:flex-row text-primary">
                         {content.texts.hero.obsHero.icon}
                         <p className="text-lighter text-center ml-[10px] mt-[12px] desktop1:mt-0">
-                          {t("hero.obsHero.text")}{" "}
+                          {t('hero.obsHero.text')}{' '}
                         </p>
                       </div>
                     </div>
@@ -84,7 +84,7 @@ export default function Influencer({ appDownloadButtons }) {
                           {content.texts.hero.app.description}
                         </p>
                         <div className="">
-                          {" "}
+                          {' '}
                           <div className="flex items-start gap-[20px]">
                             <a
                               href={content.texts.hero.app.imgs.appStore.link}
@@ -145,19 +145,19 @@ export default function Influencer({ appDownloadButtons }) {
                 <div className="h-[100px] desktop1:h-[140px]" />
                 <div className="flex flex-col-reverse gap-[40px] desktop1:flex-row desktop1:justify-between w-full items-center pb-[64px] pt-[40px] desktop1:pt-[0px] desktop1:pb-[0px]">
                   <div className="flex flex-col w-full desktop1:w-[50%] ">
-                    {/* <MotionDivDownToUp>
+                    <MotionDivDownToUp>
                       <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
                         <p className="mb-[16px] bg-primary text-colorBlack bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
-                          {content.texts.hero.miniTag}
+                          {t('hero.miniTag')}
                         </p>
                       </div>
-                    </MotionDivDownToUp> */}
+                    </MotionDivDownToUp>
                     <MotionDivDownToUp>
                       <div className="text-lighter flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
                         <h1>
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: t("hero.title"),
+                              __html: t('hero.title'),
                             }}
                           />
                         </h1>
@@ -165,14 +165,14 @@ export default function Influencer({ appDownloadButtons }) {
                     </MotionDivDownToUp>
                     <MotionDivDownToUp>
                       <div className="flex text-white justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                        <p className="my-[32px]">{t("hero.subtitle")}</p>
+                        <p className="my-[32px]">{t('hero.subtitle')}</p>
                       </div>
                     </MotionDivDownToUp>
                     <div className="w-full phone2:w-full tablet2:w-auto">
                       <div className="flex justify-center w-full desktop1:justify-start mb-[32px]">
                         <Button
-                          aria-label={t("hero.ctaButtonAriaLabel")}
-                          label={t("hero.ctaButtonText")}
+                          aria-label={t('hero.ctaButtonAriaLabel')}
+                          label={t('hero.ctaButtonText')}
                           animation
                           className="w-[100%]"
                           icon={
@@ -193,7 +193,7 @@ export default function Influencer({ appDownloadButtons }) {
                           <div className="flex flex-col items-center desktop1:flex-row text-primary">
                             {content.texts.hero.obsHero.icon}
                             <p className="text-lighter  ml-[10px] text-start mt-[12px] desktop1:mt-0">
-                              {t("hero.obsHero.text")}{" "}
+                              {t('hero.obsHero.text')}{' '}
                             </p>
                           </div>
                         </div>
@@ -205,7 +205,7 @@ export default function Influencer({ appDownloadButtons }) {
                               {content.texts.hero.app.description}
                             </p>
                             <div className="">
-                              {" "}
+                              {' '}
                               <div className="flex items-start gap-[20px]">
                                 <a
                                   href={
@@ -255,5 +255,5 @@ export default function Influencer({ appDownloadButtons }) {
         </SectionArea>
       </div>
     </>
-  );
+  )
 }

@@ -1,101 +1,101 @@
-import content from "../../content/content";
-import Button from "../interactives/Button";
-import Navbar from "../sectionElements/Navbar";
-import { useNavigate } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
-import { useState, useEffect, useRef } from "react";
-import SidebarSocial from "../sectionElements/SidebarSocial";
-import ListGroupSocial from "../sectionElements/ListGroupSocial";
-import { useTranslation } from "react-i18next";
+import content from '../../content/content'
+import Button from '../interactives/Button'
+import Navbar from '../sectionElements/Navbar'
+import { useNavigate } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
+import { useState, useEffect, useRef } from 'react'
+import SidebarSocial from '../sectionElements/SidebarSocial'
+import ListGroupSocial from '../sectionElements/ListGroupSocial'
+import { useTranslation } from 'react-i18next'
 
 export default function NavbarSocial({ colorMode, mode }) {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
-  const navigate = useNavigate();
-  const [scrolling, setScrolling] = useState(false);
-  const [showListGroup, setShowListGroup] = useState(true);
-  const [showSidebar, setShowSidebar] = useState(false);
-  const [showMenuIcon, setShowMenuIcon] = useState(true);
-  const [showSidebarContent, setShowSidebarContent] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [navbarBgWhite, setNavbarBgWhite] = useState(false);
+  const navigate = useNavigate()
+  const [scrolling, setScrolling] = useState(false)
+  const [showListGroup, setShowListGroup] = useState(true)
+  const [showSidebar, setShowSidebar] = useState(false)
+  const [showMenuIcon, setShowMenuIcon] = useState(true)
+  const [showSidebarContent, setShowSidebarContent] = useState(false)
+  const [isAnimating, setIsAnimating] = useState(false)
+  const [navbarBgWhite, setNavbarBgWhite] = useState(false)
 
-  const sidebarRef = useRef(null);
+  const sidebarRef = useRef(null)
 
   const handleScroll = () => {
-    const isScrolling = window.scrollY > 0;
-    setScrolling(isScrolling);
-    setNavbarBgWhite(isScrolling);
-  };
+    const isScrolling = window.scrollY > 0
+    setScrolling(isScrolling)
+    setNavbarBgWhite(isScrolling)
+  }
 
   const toggleSidebar = () => {
     if (!isAnimating) {
-      setIsAnimating(true);
-      setShowMenuIcon((prev) => !prev);
-      setShowSidebarContent((prev) => !prev);
+      setIsAnimating(true)
+      setShowMenuIcon((prev) => !prev)
+      setShowSidebarContent((prev) => !prev)
       if (showSidebar) {
         setTimeout(() => {
-          setShowSidebar(false);
-          setIsAnimating(false);
-        }, 940);
+          setShowSidebar(false)
+          setIsAnimating(false)
+        }, 940)
       } else {
-        setShowSidebar(true);
+        setShowSidebar(true)
         setTimeout(() => {
-          setIsAnimating(false);
-        }, 0);
+          setIsAnimating(false)
+        }, 0)
       }
     }
-  };
+  }
 
   const handleResize = () => {
-    setShowListGroup(window.innerWidth >= 768);
-  };
+    setShowListGroup(window.innerWidth >= 768)
+  }
 
   const handleClickOutside = (event) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-      handleCloseSidebar();
+      handleCloseSidebar()
     }
-  };
+  }
 
   const handleCloseSidebar = () => {
-    setShowSidebar(false);
-    setShowSidebarContent(false);
-    setIsAnimating(false);
-    setShowMenuIcon(true);
-  };
+    setShowSidebar(false)
+    setShowSidebarContent(false)
+    setIsAnimating(false)
+    setShowMenuIcon(true)
+  }
 
   const handleSidebarItemClick = () => {
-    handleCloseSidebar();
-  };
+    handleCloseSidebar()
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleResize)
+    handleResize()
+    document.addEventListener('mousedown', handleClickOutside)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   const getNavbarClasses = () => {
-    if (colorMode === "light") {
+    if (colorMode === 'light') {
       return scrolling
-        ? "bg-bgSectionOpacityLight shadow-md"
-        : "bg-transparent desktop1:bg-transparent";
+        ? 'bg-bgSectionOpacityLight shadow-md'
+        : 'bg-bgSectionOpacityLight desktop1:bg-bgSectionOpacityLight'
     }
-    if (colorMode === "dark") {
+    if (colorMode === 'dark') {
       return scrolling
-        ? "bg-gradient-to-b from-black to-bgFixedDark shadow-lg border-b-[1px] border-primary"
-        : "bg-gradient-to-b from-black to-bgFixedDark border-b-[1px] border-none";
+        ? 'bg-gradient-to-b from-black to-bgFixedDark shadow-lg border-b-[1px] border-primary'
+        : 'bg-gradient-to-b from-black to-bgFixedDark border-b-[1px] border-none'
     }
     // default
     return scrolling
-      ? "bg-gradient-to-b from-black to-bgSectionDark bg-opacity-100 shadow-lg border-b-[1px] border-primary"
-      : "bg-gradient-to-b from-black to-transparent border-b-[1px] border-none";
-  };
+      ? 'bg-gradient-to-b from-black to-bgSectionDark bg-opacity-100 shadow-lg border-b-[1px] border-primary'
+      : 'bg-gradient-to-b from-black to-transparent border-b-[1px] border-none'
+  }
 
   return (
     <div className="w-full">
@@ -117,8 +117,8 @@ export default function NavbarSocial({ colorMode, mode }) {
               alt={content.texts.navbar.logo.alt}
               className={`bg-transparent ${
                 scrolling
-                  ? " w-[20%] phone3:w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[20%] desktop2:w-[20%]"
-                  : "my-[20px] w-[35%] phone2:w-[30%] phone3:w-[30%] tablet1:w-[30%] tablet2:w-[25%] desktop1:w-[30%] desktop2:w-[40%]"
+                  ? ' w-[20%] phone3:w-[20%] tablet1:w-[20%] tablet2:w-[25%] desktop1:w-[20%] desktop2:w-[20%]'
+                  : ' w-[25%] phone2:w-[30%] phone3:w-[30%] tablet1:w-[30%] '
               } transition-all duration-1000`}
             />
           </ScrollLink>
@@ -154,5 +154,5 @@ export default function NavbarSocial({ colorMode, mode }) {
         </Navbar>
       </div>
     </div>
-  );
+  )
 }
